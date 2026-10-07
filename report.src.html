@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lot Due-Diligence Report — 12396 Edgewater Dr (Lot 23), Hampton GA 30228</title>
+<style>
+:root{
+  --ink:#1a1a1a; --mute:#5b6470; --line:#d8dde3; --bg:#eef1f4;
+  --off:#1b5e20; --gis:#1565c0; --pro:#e65100; --gap:#b3261e;
+  --accent:#0b3d62; --soft:#f6f8fa; --warn:#fff4e5; --bad:#fdecea; --good:#edf7ed;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+  font:13px/1.5 "Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+/* ---------- A4 SHEET MODEL ---------- */
+.sheet{
+  width:210mm; height:297mm; background:#fff; margin:0 auto 10mm;
+  padding:11mm 12mm 15mm; position:relative; box-shadow:0 2px 14px rgba(0,0,0,.16);
+  page-break-after:always; break-after:page; overflow:hidden;
+}
+.sheet:last-of-type{page-break-after:auto;break-after:auto}
+.pfoot{position:absolute;bottom:6mm;left:12mm;right:12mm;
+  border-top:.6px solid var(--line);padding-top:2.5mm;
+  font-size:8.1px;color:var(--mute);display:flex;justify-content:space-between}
+.phead{display:flex;justify-content:space-between;align-items:baseline;
+  border-bottom:1.4px solid var(--accent);padding-bottom:1.3mm;margin-bottom:2.4mm}
+.phead .t{font-size:11.5px;font-weight:700;color:var(--accent);letter-spacing:.2px}
+.phead .s{font-size:8.3px;color:var(--mute)}
+/* ---------- TYPE ---------- */
+h1{font-size:22px;line-height:1.12;margin:0 0 2.2mm}
+h2{font-size:12.4px;margin:2.6mm 0 1.4mm;color:var(--accent);
+   border-bottom:1px solid var(--line);padding-bottom:.8mm}
+h3{font-size:10.3px;margin:2.4mm 0 1mm;color:#17405f}
+h4{font-size:9.3px;margin:1.8mm 0 .8mm;color:#333}
+p,li{font-size:8.7px;line-height:1.42;margin:0 0 1.3mm}
+ul,ol{margin:0 0 2mm;padding-left:4.6mm}
+li{margin-bottom:.55mm}
+small{font-size:7.7px;color:var(--mute)}
+code{font:9px/1.4 ui-monospace,Menlo,Consolas,monospace;background:#f1f3f5;
+  padding:.5px 3px;border-radius:3px}
+/* ---------- BADGES ---------- */
+.b{display:inline-block;font-size:7.4px;font-weight:700;letter-spacing:.35px;
+  padding:1.3px 4.5px;border-radius:3px;color:#fff;vertical-align:1.3px;
+  text-transform:uppercase;white-space:nowrap}
+.b-off{background:var(--off)} .b-gis{background:var(--gis)}
+.b-pro{background:var(--pro)} .b-gap{background:var(--gap)}
+.legend{display:flex;gap:4mm;flex-wrap:wrap;font-size:8.4px;margin:2mm 0 0}
+.legend div{display:flex;gap:1.4mm;align-items:center}
+/* ---------- TABLES ---------- */
+table{width:100%;border-collapse:collapse;margin:1mm 0 2mm;font-size:7.9px}
+th,td{border:.4px solid var(--line);padding:.85mm 1.1mm;text-align:left;vertical-align:top;line-height:1.3}
+th{background:var(--soft);font-weight:700;font-size:7.6px;color:#2a3542}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.hi td{background:#fffbe6}
+table.kv td:first-child{width:42%;font-weight:600;background:#fafbfc}
+/* ---------- CALLOUTS ---------- */
+.box{border:1px solid var(--line);border-left:3px solid var(--accent);
+  background:var(--soft);padding:1.6mm 2.2mm;margin:1.6mm 0;font-size:8.5px}
+.box.bad{border-left-color:var(--gap);background:var(--bad)}
+.box.warn{border-left-color:var(--pro);background:var(--warn)}
+.box.good{border-left-color:var(--off);background:var(--good)}
+.box h4{margin:0 0 .8mm;font-size:9.2px}
+.box p{font-size:8.4px;margin-bottom:.9mm;line-height:1.4}
+.box p:last-child{margin-bottom:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.5mm}
+.stat{border:1px solid var(--line);border-radius:4px;padding:2mm 2.4mm;background:#fff}
+.stat .v{font-size:13px;font-weight:700;color:var(--accent);line-height:1.1}
+.stat .l{font-size:7.8px;color:var(--mute);text-transform:uppercase;letter-spacing:.3px;margin-top:.6mm}
+.fig{margin:2.5mm 0;text-align:center}
+.fig svg,.fig img{max-width:100%;height:auto}
+.fig-plan svg{max-height:176mm;width:auto}
+.fig-3d img{max-height:99mm;width:auto}
+.fig-sect svg{max-height:168mm;width:auto}
+.cap{font-size:7.6px;color:var(--mute);margin-top:1.2mm;text-align:left;
+  border-left:2px solid var(--line);padding-left:2mm}
+/* ---------- CHECKLIST ---------- */
+.ck{display:flex;gap:1.4mm;align-items:flex-start;font-size:8.3px;margin-bottom:.65mm}
+.ck input{margin:.6mm 0 0;flex:none;width:3.1mm;height:3.1mm}
+.dense table{font-size:7.3px}
+.dense th,.dense td{padding:.6mm .85mm;line-height:1.24}
+.dense p,.dense li{font-size:8.2px;line-height:1.34}
+.dense .box{padding:1.2mm 1.8mm;margin:1.2mm 0}
+.dense .box p{font-size:8px;line-height:1.33}
+.dense h2{margin:1.9mm 0 1mm;font-size:11.8px}
+/* ---------- NAV (screen only) ---------- */
+#nav{position:sticky;top:0;z-index:50;background:#0b3d62;color:#fff;
+  padding:7px 12px;display:flex;gap:9px;align-items:center;flex-wrap:wrap;
+  box-shadow:0 2px 8px rgba(0,0,0,.25)}
+#nav b{font-size:12px;margin-right:4px}
+#nav select,#nav button{font:11px inherit;padding:3px 7px;border-radius:4px;
+  border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+#nav button:hover{background:rgba(255,255,255,.26)}
+#nav .sp{flex:1}
+.dim{opacity:.17;transition:opacity .18s}
+@media print{
+  html,body{background:#fff}
+  #nav{display:none!important}
+  .sheet{margin:0;box-shadow:none;width:210mm;height:297mm;padding:11mm 12mm 15mm}
+  @page{size:A4 portrait;margin:0}
+  .noprint{display:none!important}
+  a{color:inherit;text-decoration:none}
+}
+@media screen and (max-width:900px){
+  .sheet{width:100%;padding:16px 14px 40px}
+  .grid2,.grid3{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="nav" class="noprint">
+  <b>Lot 23 Due Diligence</b>
+  <select id="jump"><option value="">Jump to section…</option></select>
+  <span class="sp"></span>
+  <button data-f="all">All evidence</button>
+  <button data-f="b-off">Official</button>
+  <button data-f="b-gis">GIS-derived</button>
+  <button data-f="b-pro">Needs professional</button>
+  <button data-f="b-gap">Unverified gaps</button>
+  <button id="pr">Print / Save PDF</button>
+</div>
+
+<!-- ============ SHEET 1 : COVER ============ -->
+<section class="sheet" id="s-cover" data-nav="Cover &amp; critical findings">
+  <div class="phead"><span class="t">LOT DUE-DILIGENCE REPORT</span><span class="s">Prepared {{DATE}}</span></div>
+  <h1>12396 Edgewater Drive, Unit/Lot&nbsp;23<br>Hampton, GA 30228</h1>
+  <p style="font-size:11px;margin-bottom:3mm">
+    Vacant residential lot &middot; <b>1.3313 acres</b> &middot; Waterpointe subdivision &middot;
+    <b>Clayton County, Georgia</b> &middot; Parcel <code>05050A A003</code> &middot; Zoned <code>RS180</code>
+  </p>
+
+  <div class="grid3" style="margin-bottom:3mm">
+    <div class="stat"><div class="v">1.3313 ac</div><div class="l">57,993 sq ft (GIS-computed)</div></div>
+    <div class="stat"><div class="v">148 &times; 419 ft</div><div class="l">width &times; depth</div></div>
+    <div class="stat"><div class="v">80.2 ft</div><div class="l">elevation relief on lot</div></div>
+    <div class="stat"><div class="v">18.3%</div><div class="l">average slope (10.4&deg;)</div></div>
+    <div class="stat"><div class="v">Zone X</div><div class="l">FEMA — minimal flood hazard</div></div>
+    <div class="stat"><div class="v">$125,000</div><div class="l">asking &middot; county appraisal $60,000</div></div>
+  </div>
+
+  <h2>How to read this report</h2>
+  <p>Every finding carries a provenance tag. This distinction is the core discipline of the report: a
+  lidar-derived contour is <em>not</em> a legally reliable survey, and nothing here substitutes for a
+  licensed professional or a county confirmation.</p>
+  <div class="legend">
+    <div><span class="b b-off">Official</span> recorded/published source (county GIS, FEMA, USDA, county resolution)</div>
+    <div><span class="b b-gis">GIS-derived</span> computed by this analysis from public lidar/GIS — an estimate</div>
+  </div>
+  <div class="legend" style="margin-top:1.5mm">
+    <div><span class="b b-pro">Needs professional</span> requires surveyor, engineer, soil scientist or county sign-off</div>
+    <div><span class="b b-gap">Unverified</span> document not obtained / data unavailable at time of writing</div>
+  </div>
+
+  <h2 style="margin-top:5mm">Five findings that change the picture</h2>
+
+  <div class="box bad">
+    <h4>1. The property is in Clayton County — not Henry County <span class="b b-off">Official</span></h4>
+    <p>The "Hampton, GA 30228" address leads nearly everyone to assume Henry County. The U.S. Census
+    geocoder returns <b>Clayton County (FIPS 13063)</b>, the parcel is served by the
+    <b>Clayton County</b> tax assessor, and the HOA describes itself as a Clayton County community.
+    This determines zoning, permitting, property tax millage, and <b>school assignment</b> — all
+    Clayton County, not Henry.</p>
+  </div>
+
+  <div class="box bad">
+    <h4>2. The lot does not touch the water <span class="b b-off">Official</span> <span class="b b-gis">GIS-derived</span></h4>
+    <p>Listings market this as a "lakefront" lot with "direct access to the water." The county parcel
+    polygon tells a different story: Lot 23's south boundary adjoins parcel
+    <code>05045 051001</code>, owned by the <b>Clayton County Water Authority (CCWA)</b> and appraised
+    at $5.48M. The reservoir's edge lies roughly <b>59–80 ft inside CCWA land</b>. Lot 23 contains
+    <b>zero</b> water. It is lake-<em>adjacent</em> with a view, <b>not riparian</b>, and carries no
+    apparent water frontage rights.</p>
+  </div>
+
+  <div class="box bad">
+    <h4>3. The lake is a public drinking-water reservoir — expect no private dock <span class="b b-off">Official</span></h4>
+    <p>The water body is <b>J.W. Smith Reservoir</b>, a CCWA public water-supply reservoir. CCWA sells
+    access <b>permits</b> ($5 day / $25 annual), restricts hours, <b>closes J.W. Smith entirely from
+    November through February</b>, and prohibits <b>swimming and wading</b>. A private dock would have
+    to be built on and over land and water the buyer does not own, belonging to a public water utility.
+    Treat dock, motorized boating and swimming as <b>not available</b> until CCWA says otherwise in writing.</p>
+  </div>
+
+  <div class="box warn">
+    <h4>4. The terrain is materially steeper than advertised <span class="b b-gis">GIS-derived</span></h4>
+    <p>A 2021 listing called this a "perfect gentle rolling lot." USGS 3DEP lidar measures
+    <b>80.2 ft of fall</b> across the lot and an <b>18.3% average grade</b>, reaching <b>23.5% over the
+    steepest 50 ft</b>. Independently, USDA maps the soil as the <b>10–25% slope</b> phase with a
+    representative slope of <b>18%</b> — two unrelated sources agreeing. This is a
+    <b>moderate slope</b> lot (locally steep), which drives foundation type, driveway design,
+    retaining walls and cost.</p>
+  </div>
+
+  <div class="box warn">
+    <h4>5. Two Clayton County moratoriums are active right now <span class="b b-off">Official</span></h4>
+    <p><b>Resolution 2026-153</b> suspends acceptance of applications for <b>short-term rentals</b>
+    (plus boarding/group/personal-care homes) through <b>31 December 2026</b>.
+    <b>Resolution 2026-120</b> suspends applications for new single-family <b>subdivision</b>
+    development on the same timeline. The STR moratorium directly contradicts any Airbnb/VRBO
+    investment thesis for now; the development moratorium needs a direct answer from the county as to
+    whether a single home on an existing platted lot is caught by it.</p>
+  </div>
+
+  <div class="box">
+    <h4>What is genuinely good here</h4>
+    <p>FEMA <b>Zone X</b> (minimal flood hazard) with the lot's low point ~10 ft above normal pool;
+    <b>well-drained</b> soil with <b>low shrink–swell</b>; a permanently undeveloped CCWA buffer behind
+    the lot that protects the view; a fire station <b>0.19 mi</b> away; Hartsfield-Jackson ~16 mi;
+    and a built-out neighbourhood of $300k–$860k homes that supports the value of a well-built house.</p>
+  </div>
+
+  <div class="pfoot"><span>12396 Edgewater Dr (Lot 23) · Parcel 05050A A003 · Clayton County, GA</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 2 : SECTION A ============ -->
+<section class="sheet" id="s-a" data-nav="A · Identification &amp; mapping">
+  <div class="phead"><span class="t">A · PROPERTY IDENTIFICATION &amp; MAPPING</span><span class="s">Items 1–4</span></div>
+
+  <h2>1 · Property identification <span class="b b-off">Official</span></h2>
+  <table class="kv">
+    <tr><td>Street address</td><td>12396 Edgewater Drive, Hampton, GA 30228</td></tr>
+    <tr><td>Unit designation "#23"</td><td>Corresponds to <b>LOT 23</b> in the county record — confirmed, not an apartment unit</td></tr>
+    <tr><td>Subdivision / community</td><td>Waterpointe (four phases); Waterpointe Community Association</td></tr>
+    <tr><td>County / state</td><td><b>Clayton County</b>, Georgia (FIPS 13063) — <em>not</em> Henry County</td></tr>
+    <tr><td>Parcel / APN</td><td><code>05050A A003</code></td></tr>
+    <tr><td>Zoning</td><td><code>RS180</code> (single-family residential)</td></tr>
+    <tr><td>Lot area</td><td><b>57,993 sq ft = 1.3313 acres</b> <span class="b b-gis">GIS-derived</span> — computed from the county parcel polygon in UTM 16N/NAD83; matches the listing's "1.33 acre" claim</td></tr>
+    <tr><td>Perimeter</td><td>1,112.6 ft</td></tr>
+    <tr><td>Dimensions</td><td>≈ <b>148 ft wide × 419 ft deep</b> (minimum rotated rectangle)</td></tr>
+    <tr><td>Owner of record</td><td>MCKNIGHT DESMOND · deed year <b>2021</b></td></tr>
+    <tr><td>County appraised value</td><td><b>$60,000</b> (land fair market value $60,000; no structure)</td></tr>
+    <tr><td>County floodplain flag</td><td>NO</td></tr>
+    <tr><td>Centroid (WGS84)</td><td><code>33.41612601, -84.36982169</code></td></tr>
+    <tr><td>Legal description</td><td><span class="b b-gap">Unverified</span> Not obtained. The recorded deed and plat legal description must be pulled from the Clayton County Clerk of Superior Court.</td></tr>
+  </table>
+
+  <h3>Surveyed corner coordinates <span class="b b-gis">GIS-derived</span></h3>
+  <p>Converted from the county parcel polygon. <b>These are GIS coordinates, not survey monuments</b> —
+  county parcel fabric routinely differs from a field survey by several feet.</p>
+  <table>
+    <tr><th>Corner</th><th>Latitude</th><th>Longitude</th><th>Position</th></tr>
+    <tr><td>V0</td><td class="n">33.41565614</td><td class="n">-84.36937280</td><td>SE corner (lake end)</td></tr>
+    <tr><td>V1</td><td class="n">33.41553600</td><td class="n">-84.36983654</td><td>SW corner (lake end)</td></tr>
+    <tr><td>V2</td><td class="n">33.41663119</td><td class="n">-84.37025320</td><td>NW corner (road end)</td></tr>
+    <tr><td>V3</td><td class="n">33.41671759</td><td class="n">-84.36988479</td><td>North boundary jog</td></tr>
+    <tr><td>V4</td><td class="n">33.41672798</td><td class="n">-84.36984213</td><td>NE corner (road end)</td></tr>
+  </table>
+  <table>
+    <tr><th>Boundary line</th><th class="n">Length (ft)</th><th class="n">Bearing</th><th>Notes</th></tr>
+    <tr><td>V0 → V1 (south / rear)</td><td class="n">148.2</td><td class="n">251.4°</td><td>Adjoins CCWA reservoir parcel</td></tr>
+    <tr><td>V1 → V2 (west side)</td><td class="n">418.5</td><td class="n">340.9°</td><td>Adjoins Lot 24 (12402)</td></tr>
+    <tr><td>V2 → V3 (north / front)</td><td class="n">116.8</td><td class="n">72.9°</td><td>Edgewater Dr frontage</td></tr>
+    <tr><td>V3 → V4 (north / front)</td><td class="n">13.6</td><td class="n">72.4°</td><td>Continuation — total frontage ≈ 130.4 ft</td></tr>
+    <tr><td>V4 → V0 (east side)</td><td class="n">415.6</td><td class="n">158.4°</td><td>Adjoins Lot 22 (12390)</td></tr>
+  </table>
+
+  <h2>2 · Listing information <span class="b b-off">Official</span> <span class="b b-gap">Images unavailable</span></h2>
+  <table class="kv">
+    <tr><td>Current asking price</td><td><b>$125,000</b> (1.33-acre lot, marketed as lakefront)</td></tr>
+    <tr><td>County appraisal</td><td>$60,000 — <b>52% below</b> asking. Note every other vacant lot on Edgewater Dr is also appraised at exactly $60,000, so this is the assessor's standard vacant-lot figure rather than a property-specific opinion.</td></tr>
+    <tr><td>Earlier marketing (2021)</td><td>Described as "1.33 acre lake front lot… nicely wooded, perfect gentle rolling lot" — the <b>"gentle rolling" characterisation is not supported</b> by lidar (see Section B).</td></tr>
+    <tr><td>Neighbourhood sales</td><td>Waterpointe: 4 recorded sales in the 12 months to 20 Sep 2026, median <b>$454,950</b>, <b>$120/sq ft</b>, median 34 days on market, sellers accepting ~99% of original ask.</td></tr>
+  </table>
+  <div class="box warn">
+    <h4>Why there are no listing photographs in this report</h4>
+    <p>The checklist requests Zillow hero and surrounding-area images. Listing photographs on Zillow,
+    Redfin and realtor.com are <b>copyrighted</b> by the brokerage or photographer and are not licensed
+    for redistribution in a derivative report. Embedding or hot-linking them here would infringe those
+    rights, so they are deliberately omitted. Open the source listings directly to view them:</p>
+    <ul>
+      <li>Redfin — <code>redfin.com/GA/Hampton/12396-Edgewater-Dr-30228/home/25184182</code></li>
+      <li>realtor.com — <code>realtor.com/realestateandhomes-detail/12396-Edgewater-Dr_Hampton_GA_30228_M65547-02384</code></li>
+    </ul>
+    <p>All imagery in this report is instead generated from public-domain federal data (USGS 3DEP
+    lidar, FEMA, USDA) and county GIS, which carry no such restriction.</p>
+  </div>
+
+  <div class="pfoot"><span>A · Property identification &amp; mapping</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 3 : PLAT / GIS ============ -->
+<section class="sheet" id="s-a2" data-nav="A · Plat, GIS &amp; neighbours">
+  <div class="phead"><span class="t">A · PLAT, GIS &amp; ADJOINING OWNERSHIP</span><span class="s">Items 3–4</span></div>
+
+  <h2>3 · Official recorded plat &amp; boundary <span class="b b-gap">Unverified</span> <span class="b b-pro">Needs professional</span></h2>
+  <div class="box bad">
+    <h4>The recorded plat has not been obtained — this is the single most important missing document</h4>
+    <p>Everything in this report's boundary analysis derives from the <b>county parcel fabric</b>, which
+    is a tax-mapping product, not a legal instrument. The recorded plat is what actually governs, and it
+    is the only place you will find:</p>
+    <ul>
+      <li><b>Easements</b> — drainage, utility, sanitary-sewer and access easements. On a 419 ft deep
+        lot draining toward a public reservoir, a rear drainage easement is plausible and would
+        directly reduce buildable area.</li>
+      <li><b>Building setback lines</b> as platted (which may be stricter than zoning).</li>
+      <li>Whether any <b>reservoir buffer or no-build strip</b> was dedicated when Waterpointe was platted.</li>
+      <li>The <b>legal description</b> and the true bearing/distance calls on each line.</li>
+    </ul>
+    <p>Obtain from: <b>Clayton County Clerk of Superior Court</b> (recorded plats) and the
+    <b>Tax Assessor Mapping Department</b>, (770) 477-3276.</p>
+  </div>
+  <p>Comparison of county GIS against the listing: the GIS-computed area (<b>1.3313 ac</b>) agrees with
+  the advertised 1.33 ac to within 0.1%, which is reassuring on size. The county's own
+  <code>ACERAGE</code> attribute is populated as <code>0.0</code> for this parcel — a database gap, not
+  a zero-acreage lot. Discrepancies found are catalogued in Section&nbsp;M.</p>
+
+  <h2>4 · GIS / parcel map &amp; adjoining ownership <span class="b b-off">Official</span></h2>
+  <p>Queried live from the Clayton County Tax Assessor ArcGIS service
+  (<code>gis.claytoncountyga.gov/server/rest/services/TaxAssessor/Parcels</code>). The decisive result
+  is the first row.</p>
+  <table>
+    <tr><th>Parcel</th><th>Address / owner</th><th>Zone</th><th>Lot</th><th class="n">Appraised</th><th>Relationship to Lot 23</th></tr>
+    <tr class="hi"><td><code>05045 051001</code></td><td>275 Hampton Rd —<br><b>CLAYTON COUNTY WATER AUTHORITY</b></td><td>AG</td><td>—</td><td class="n">$5,480,100</td><td><b>Adjoins rear boundary. Contains the entire reservoir</b> (all 362 lidar water samples fall inside it).</td></tr>
+    <tr><td><code>05050A A002</code></td><td>12390 Edgewater Dr — Hickson</td><td>RS180</td><td>22</td><td class="n">$519,400</td><td>East neighbour, improved</td></tr>
+    <tr><td><code>05050A A004</code></td><td>12402 Edgewater Dr — Wilson</td><td>RS180</td><td>24</td><td class="n">$60,000</td><td>West neighbour, <b>vacant</b></td></tr>
+    <tr><td><code>05050A A001</code></td><td>12382 Edgewater Dr — Chastain</td><td>RS180</td><td>21</td><td class="n">$60,000</td><td>134 ft away, vacant</td></tr>
+    <tr><td><code>05050A A005</code></td><td>12408 Edgewater Dr — McGuffie Trust</td><td>RS180</td><td>25</td><td class="n">$60,000</td><td>135 ft away, vacant</td></tr>
+    <tr><td><code>05050C B001</code></td><td>12554 Panhandle Rd — <b>Clayton County Fire Station</b></td><td>ER</td><td>—</td><td class="n">$859,100</td><td><b>652 ft away</b> — Station 10</td></tr>
+  </table>
+  <div class="box">
+    <h4>Reading the ownership pattern</h4>
+    <p>Four of the nine nearest lots are still vacant and appraised at $60,000 each. Waterpointe has
+    been building out since 1988 and these lots have not sold — on a street where finished homes appraise
+    at $300k–$860k. That is worth asking about directly: slow absorption of the <em>steeper, lake-end</em>
+    lots is consistent with the terrain and dock findings in this report. It is also a negotiating
+    data point against the $125,000 ask.</p>
+  </div>
+
+  <h3>Discrepancies between sources <span class="b b-gis">GIS-derived</span></h3>
+  <table>
+    <tr><th>Item</th><th>Source A</th><th>Source B</th><th>Assessment</th></tr>
+    <tr><td>Acreage</td><td>Listing: 1.33 ac</td><td>GIS polygon: 1.3313 ac</td><td>Agree</td></tr>
+    <tr><td>County acreage field</td><td>GIS <code>ACERAGE</code> = 0.0</td><td>Computed 1.3313 ac</td><td>County field is blank/zero — data gap</td></tr>
+    <tr><td>Waterfront status</td><td>Listing: "lakefront", "direct access to the water"</td><td>Parcel contains no water; CCWA land intervenes</td><td><b>Material conflict</b> — see item 24</td></tr>
+    <tr><td>Terrain</td><td>Listing: "gentle rolling"</td><td>Lidar 18.3% avg; USDA 10–25% slope unit</td><td><b>Material conflict</b> — see Section B</td></tr>
+    <tr><td>County</td><td>Mailing address "Hampton"</td><td>Census + assessor: Clayton County</td><td>Hampton address spans counties; parcel is Clayton</td></tr>
+    <tr><td>FEMA panel returned</td><td>Flood polygon DFIRM <code>13063C</code> (Clayton)</td><td>Panel query returned <code>13151C0140D</code> (Henry)</td><td>Near a county line; confirm the governing panel with the county floodplain administrator</td></tr>
+  </table>
+
+  <div class="pfoot"><span>A · Plat, GIS &amp; adjoining ownership</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 4 : TRUE-SCALE MAP ============ -->
+<section class="sheet" id="s-map" data-nav="B · True-scale contour map">
+  <div class="phead"><span class="t">B · TRUE-SCALE BOUNDARY &amp; CONTOUR MAP</span><span class="s">Item 5</span></div>
+  <div class="fig fig-plan">{{SVG:plan_topo}}</div>
+  <div class="cap"><b>Figure 1 — True-scale plan.</b> Horizontal scale is 1:1 (equal aspect); the scale
+  bar is valid in both axes. Contours at 5 ft (labelled every 25 ft) derived from USGS 3DEP lidar
+  sampled on a lot-aligned 10 ft grid (3,149 points, 583 of them inside the boundary). Blue arrows show
+  computed down-gradient drainage direction. The lot has been rotated so the road-to-lake axis is vertical;
+  the north arrow shows true north at 20.4° from the page vertical.
+  <b>Contours are lidar-derived estimates, not a surveyed topographic map.</b></div>
+
+  <div class="grid3" style="margin-top:3mm">
+    <div class="stat"><div class="v">891 ft</div><div class="l">highest point (at road)</div></div>
+    <div class="stat"><div class="v">811 ft</div><div class="l">lowest point (at rear)</div></div>
+    <div class="stat"><div class="v">801 ft</div><div class="l">reservoir normal pool</div></div>
+  </div>
+  <p>Note how the contours run <b>almost perpendicular</b> to the lot's long axis and are
+  <b>evenly spaced</b> — the signature of a uniform, planar hillside rather than a lot with a flat
+  building pad and a drop at the back. The fall is continuous from road to rear boundary, and that is
+  the central constraint on this site.</p>
+  <div class="pfoot"><span>B · True-scale boundary &amp; contour map</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 5 : CROSS SECTIONS ============ -->
+<section class="sheet" id="s-sect" data-nav="B · Cross-sections &amp; slope">
+  <div class="phead"><span class="t">B · LONGITUDINAL CROSS-SECTION — EXAGGERATED vs TRUE 1:1</span><span class="s">Item 6</span></div>
+  <p style="margin-bottom:2mm">The brief specifically requires that any vertically exaggerated profile
+  be shown <b>side by side with a true 1:1 model</b>, because exaggeration is the most common way a
+  slope diagram misleads. Both are below, from the same lidar data along the lot centreline.</p>
+  <div class="fig fig-sect">{{SVG:sections}}</div>
+  <div class="cap"><b>Figure 2 — Road → lake section.</b> Panel (a) uses ≈6.1× vertical exaggeration,
+  the conventional map presentation: the hillside looks severe. Panel (b) is the identical data at
+  true 1:1 — the honest profile. The land reads as a steady, uniform grade rather than a cliff, but
+  it never flattens: there is no natural level building pad anywhere on the lot.</div>
+
+  <h3>Slope metrics as specified <span class="b b-gis">GIS-derived</span></h3>
+  <table>
+    <tr><th>Metric</th><th class="n">Value</th><th>Interpretation</th></tr>
+    <tr><td>Length of lot (road → rear, centreline)</td><td class="n">410 ft</td><td>Measured run used for grades</td></tr>
+    <tr><td>Height (fall) across that run</td><td class="n">75.1 ft</td><td>889.99 ft → 814.94 ft</td></tr>
+    <tr><td>Total relief anywhere on lot</td><td class="n">80.2 ft</td><td>891.19 ft max − 811.03 ft min</td></tr>
+    <tr class="hi"><td><b>Average slope</b></td><td class="n"><b>18.3% / 10.37°</b></td><td>Moderate slope class</td></tr>
+    <tr class="hi"><td><b>Maximum slope over any 50 ft</b></td><td class="n"><b>23.5% / 13.25°</b></td><td>Occurs 60–110 ft in from the road — i.e. right where a house would go</td></tr>
+    <tr><td>Direct rising angle from shoreline to lot high point</td><td class="n">18.4% / 10.42°</td><td>90.1 ft rise over 490 ft</td></tr>
+    <tr><td>Rising angle over the last 50 ft toward the water</td><td class="n">18.5% / 10.47°</td><td>Grade does not ease at the lake end</td></tr>
+    <tr><td>Lowest ground vs normal pool</td><td class="n">+9.9 ft</td><td>Freeboard above the reservoir surface</td></tr>
+    <tr><td>Gap between rear boundary and water's edge</td><td class="n">59–80 ft</td><td>CCWA-owned land, not purchasable with the lot</td></tr>
+  </table>
+  <div class="box warn">
+    <h4>The steepest ground is in the worst possible place</h4>
+    <p>The 23.5% maximum occurs between 60 ft and 110 ft from the road frontage. After a front setback
+    (RS180 front setback still to be confirmed), that band is exactly where the house footprint and
+    driveway approach would normally sit. A driveway on 23.5% grade is unusable — residential driveways
+    are generally kept at or below about 15%, with many jurisdictions stricter. Expect the design to
+    require cutting into the slope, a stepped or daylight-basement foundation, and retaining structure.</p>
+  </div>
+  <div class="pfoot"><span>B · Cross-sections &amp; slope analysis</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 6 : 3D + CLASSIFICATION ============ -->
+<section class="sheet" id="s-3d" data-nav="B · 3D model &amp; classification">
+  <div class="phead"><span class="t">B · 3D TERRAIN MODEL &amp; TERRAIN CLASSIFICATION</span><span class="s">Items 7–8</span></div>
+  <div class="fig fig-3d">{{SVG:terrain3d}}</div>
+  <div class="cap"><b>Figure 3 — 3D terrain surface.</b> Lot boundary in red, reservoir plane in blue.
+  Vertical scale is exaggerated to make the surface legible (see Figure 2b for the true profile). The
+  surface is a smooth, consistently dipping hillside with no bench or plateau inside the boundary.</div>
+
+  <h2>7 · Terrain classification <span class="b b-gis">GIS-derived</span></h2>
+  <table>
+    <tr><th>Classification band</th><th class="n">Grade</th><th>Applies?</th></tr>
+    <tr><td>Flat</td><td class="n">&lt; 2%</td><td>No</td></tr>
+    <tr><td>Nearly flat</td><td class="n">2–5%</td><td>No</td></tr>
+    <tr><td>Gentle slope</td><td class="n">5–10%</td><td>No — contradicts the "gentle rolling" marketing</td></tr>
+    <tr class="hi"><td><b>Moderate slope</b></td><td class="n">10–20%</td><td><b>YES — lot average 18.3%</b></td></tr>
+    <tr class="hi"><td><b>Steep slope</b></td><td class="n">20–30%</td><td><b>YES locally — 23.5% over the steepest 50 ft</b></td></tr>
+    <tr><td>Very steep slope</td><td class="n">&gt; 30%</td><td>No</td></tr>
+  </table>
+  <p>Two independent sources agree, which materially raises confidence:
+  <b>(a)</b> USGS 3DEP lidar measured by this analysis → 18.3% average;
+  <b>(b)</b> USDA-NRCS maps the entire parcel as soil unit <b>GwE2, the "10 to 25 percent slopes, eroded" phase</b>,
+  with a representative slope of <b>18%</b>. Neither derives from the other.</p>
+
+  <h3>Construction earthwork implications <span class="b b-gis">GIS-derived</span> <span class="b b-pro">Needs professional</span></h3>
+  <table>
+    <tr><th>Requirement</th><th>Likelihood</th><th>Basis</th></tr>
+    <tr><td>Minimal grading</td><td><b>Very unlikely</b></td><td>No natural level pad exists on the lot</td></tr>
+    <tr><td>Significant grading</td><td><b>Likely</b></td><td>Creating any level pad on an 18% grade requires substantial earthwork</td></tr>
+    <tr><td>Cut-and-fill</td><td><b>Very likely</b></td><td>Balanced cut/fill is the standard approach on a uniform hillside</td></tr>
+    <tr><td>Retaining walls</td><td><b>Likely</b></td><td>Needed to hold cut faces and create usable flat yard</td></tr>
+    <tr><td>Extensive site engineering</td><td><b>Probable</b></td><td>Grading plan, drainage design and possibly a geotechnical report</td></tr>
+    <tr><td>Stepped / daylight-basement foundation</td><td><b>Strongly indicated</b></td><td>80 ft of fall is well suited to a daylight basement — the neighbourhood already has these (e.g. 12328 Edgewater's "huge partially finished basement")</td></tr>
+  </table>
+  <div class="box good">
+    <h4>The slope is not only a cost — it is also the view</h4>
+    <p>An 18% fall toward a permanently protected reservoir is precisely what produces an elevated,
+    unobstructable water view, and it lends itself naturally to a daylight-basement design that yields
+    a large, well-lit lower level at modest marginal cost. Neighbouring homes with water views appraise
+    at the top of the street ($519k–$737k). The terrain is best read as "expensive to start, valuable
+    when finished" rather than simply a defect.</p>
+  </div>
+  <div class="pfoot"><span>B · 3D terrain model &amp; classification</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 7 : FLOOD ============ -->
+<section class="sheet" id="s-c" data-nav="C · Flood, elevation &amp; drainage">
+  <div class="phead"><span class="t">C · FLOOD, ELEVATION &amp; DRAINAGE</span><span class="s">Items 9–13</span></div>
+
+  <h2>9 · FEMA flood-zone determination <span class="b b-off">Official</span></h2>
+  <p>Queried directly from the FEMA National Flood Hazard Layer at the parcel location.</p>
+  <table class="kv">
+    <tr><td>Flood zone</td><td><b>Zone X</b></td></tr>
+    <tr><td>Zone subtype</td><td><b>AREA OF MINIMAL FLOOD HAZARD</b></td></tr>
+    <tr><td>Special Flood Hazard Area (SFHA)</td><td><b>No</b> (<code>SFHA_TF = F</code>)</td></tr>
+    <tr><td>Static BFE published</td><td><b>None</b> (<code>-9999</code> = not applicable in Zone X)</td></tr>
+    <tr><td>Depth</td><td>None</td></tr>
+    <tr><td>DFIRM ID</td><td><code>13063C</code> (Clayton County countywide)</td></tr>
+    <tr><td>Panel returned by panel-layer query</td><td><code>13151C0140D</code>, effective 6 Oct 2016 — a <b>Henry County</b> panel <span class="b b-gap">Conflict</span></td></tr>
+  </table>
+  <div class="box">
+    <h4>Reconcile the panel before relying on it</h4>
+    <p>The flood-zone polygon is unambiguously Clayton County's (<code>13063C</code>) and returns Zone X.
+    The separate panel-index query returned a Henry County panel, which happens near county lines where
+    panel polygons overlap. The <b>zone determination is the operative answer and it is favourable</b>,
+    but for a lender or an elevation certificate you want the governing panel number in writing from the
+    Clayton County floodplain administrator.</p>
+  </div>
+  <div class="box good">
+    <h4>Not Zone A, AE, AO, AH or VE</h4>
+    <p>The lot is in none of the Special Flood Hazard Areas. Mandatory federal flood insurance does not
+    apply. This is one of the strongest objective positives on the property, and it is explained by
+    geometry: the lot's lowest ground sits ~10 ft above the reservoir's normal pool and ~59–80 ft back
+    from the water.</p>
+  </div>
+
+  <h2>10 · First Street / forward-looking flood risk <span class="b b-gap">Unverified</span></h2>
+  <p>First Street Foundation's Flood Factor is a proprietary model behind terms that do not permit
+  redistribution of its scores in a derivative report, and no score was retrieved for this parcel. It is
+  worth checking yourself at <code>riskfactor.com</code> because it models pluvial (rainfall) and future
+  climate risk that FEMA's map does not. Given Zone X status, ~10 ft of freeboard, and
+  well-drained Hydrologic Group B soil, a low score is the expected outcome — but that is a reasoned
+  expectation, not a retrieved value.</p>
+
+  <h2>11 · Site elevations <span class="b b-gis">GIS-derived</span></h2>
+  <table class="kv">
+    <tr><td>Highest natural ground</td><td><b>891.2 ft</b> NAVD88 (at the road frontage)</td></tr>
+    <tr><td>Lowest natural ground</td><td><b>811.0 ft</b> (at the rear/lake boundary)</td></tr>
+    <tr><td>Average site elevation</td><td><b>849.9 ft</b></td></tr>
+    <tr><td>Reservoir normal pool</td><td><b>801.1 ft</b> — the lidar flat-water plane (362 concordant samples)</td></tr>
+    <tr><td>Lot low point above pool</td><td><b>+9.9 ft</b></td></tr>
+    <tr><td>Lot high point above pool</td><td><b>+90.1 ft</b></td></tr>
+  </table>
+  <p><small>Spot-check: the independent USGS Elevation Point Query Service returned 895.9 ft at the
+  road-interpolated address point, against 896.0 ft from the 3DEP grid at the same location — agreement
+  to 0.1 ft. Reservoir level is a <em>single-epoch</em> lidar observation and will vary seasonally and
+  with CCWA operations.</small></p>
+
+  <h2>12 · Base Flood Elevation (BFE) <span class="b b-off">Official</span></h2>
+  <p><b>No BFE exists for this parcel.</b> FEMA publishes base flood elevations only inside Special Flood
+  Hazard Areas; in Zone X there is no regulatory BFE, so the checklist's "difference between lowest
+  ground and BFE" is undefined here. The nearest meaningful datum is the reservoir normal pool
+  (801.1 ft), against which the lot's low point has 9.9 ft of freeboard.</p>
+
+  <h2>13 · Minimum finished-floor elevation <span class="b b-pro">Needs professional</span></h2>
+  <p>With no BFE, no FEMA-driven freeboard requirement is triggered, and the usual
+  "BFE + freeboard = minimum finished floor" calculation does not apply. Finished-floor elevation will
+  instead be set by the grading and drainage design, not by floodplain rules. Confirm with Clayton
+  County Community Development whether any <b>local</b> reservoir-watershed or drainage ordinance imposes
+  a minimum elevation or buffer independent of FEMA.</p>
+  <table>
+    <tr><th>Question</th><th>Finding</th></tr>
+    <tr><td>Existing terrain adequate?</td><td><b>Yes with respect to flooding</b> — the whole lot sits above the reservoir with no mapped flood hazard</td></tr>
+    <tr><td>Is fill necessary to escape flood risk?</td><td><b>No.</b> Any earthwork here is for buildability on the slope, not flood avoidance</td></tr>
+    <tr><td>Must the house be elevated?</td><td><b>No</b> flood-driven elevation requirement</td></tr>
+    <tr><td>Crawlspace / pier / slab restrictions?</td><td>No flood-zone restriction. Choice will be governed by slope and soil — see items 15 and 43</td></tr>
+  </table>
+  <p><small>The brief rightly warns against assuming fill is permitted merely because it raises a house
+  above a BFE. That trap does not arise here — but the inverse caution does: do not assume unlimited
+  grading freedom just because there is no floodplain rule. Earth disturbance adjacent to a
+  <b>public drinking-water reservoir</b> is exactly the situation where state and local
+  water-supply-watershed buffer rules and erosion-control permits bite. Verify before designing.</p>
+
+  <h2>45 · Drainage <span class="b b-gis">GIS-derived</span></h2>
+  <p>Computed flow direction is uniformly from the road frontage toward the reservoir — i.e. the lot
+  drains across its full depth into a public water supply. Every blue arrow in Figure 1 points the same
+  way. Practical consequences: (a) roof and driveway runoff must be managed so it does not discharge
+  sediment downslope onto CCWA land; (b) upslope runoff from Edgewater Dr and the properties opposite
+  arrives at the front boundary and must be intercepted; (c) erosion risk during construction is
+  elevated on an 18% grade in an "eroded"-phase soil. Natural swales, culverts, neighbouring runoff
+  and the lake outfall all require field verification. <span class="b b-pro">Needs professional</span></p>
+  <div class="pfoot"><span>C · Flood, elevation &amp; drainage</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 8 : SOIL ============ -->
+<section class="sheet" id="s-d" data-nav="D · Soil &amp; foundation">
+  <div class="phead"><span class="t">D · SOIL CHARACTERISTICS &amp; FOUNDATION SUITABILITY</span><span class="s">Items 14–15</span></div>
+
+  <h2>14 · Soil characteristics <span class="b b-off">Official</span></h2>
+  <p>USDA-NRCS Soil Survey, queried via Soil Data Access for the parcel polygon. The entire lot falls in
+  a <b>single map unit</b> (a consociation, 100% one component) — unusually clean, which makes the data
+  more useful than typical.</p>
+  <table class="kv">
+    <tr><td>Map unit</td><td><code>GwE2</code> (mukey 125527) — <b>Gwinnett sandy clay loam, 10 to 25 percent slopes, eroded</b></td></tr>
+    <tr><td>Soil series / component</td><td><b>Gwinnett</b>, 100% of unit</td></tr>
+    <tr><td>Taxonomic class</td><td>Fine, kaolinitic, thermic <b>Rhodic Kanhapludults</b> — classic deep red Georgia Piedmont clay</td></tr>
+    <tr><td>Representative slope</td><td><b>18%</b> (range 10–25%) — independently corroborates the lidar</td></tr>
+    <tr><td>Drainage class</td><td><b>Well drained</b></td></tr>
+    <tr><td>Hydrologic soil group</td><td><b>B</b> — moderate infiltration, moderate runoff</td></tr>
+    <tr><td>Saturated hydraulic conductivity (Ksat)</td><td>9.0 µm/s ≈ <b>1.3 in/hr</b> — moderately high</td></tr>
+    <tr><td>Depth to restrictive layer</td><td><b>127 cm (50 in)</b> — paralithic bedrock, "moderately coherent"</td></tr>
+    <tr><td>Depth to groundwater</td><td>No water table reported within the profile — deep</td></tr>
+    <tr><td>Shrink–swell (linear extensibility)</td><td><b>LEP 1.5% — LOW</b> (values under ~3% are low)</td></tr>
+    <tr><td>Erosion factor T</td><td>4</td></tr>
+    <tr><td>Flooding / ponding</td><td>None reported</td></tr>
+  </table>
+
+  <h3>Soil profile by horizon</h3>
+  <table>
+    <tr><th>Horizon</th><th class="n">Depth</th><th class="n">Sand %</th><th class="n">Silt %</th><th class="n">Clay %</th><th class="n">Org. matter %</th><th class="n">pH</th></tr>
+    <tr><td>H1 (topsoil)</td><td class="n">0–13 cm / 0–5 in</td><td class="n">55.5</td><td class="n">14.5</td><td class="n">30.0</td><td class="n">2.0</td><td class="n">5.8</td></tr>
+    <tr class="hi"><td>H2 (argillic B)</td><td class="n">13–91 cm / 5–36 in</td><td class="n">23.3</td><td class="n">29.2</td><td class="n"><b>47.5</b></td><td class="n">0.25</td><td class="n">5.8</td></tr>
+    <tr><td>H3</td><td class="n">91–163 cm / 36–64 in</td><td class="n">34.8</td><td class="n">33.2</td><td class="n">32.0</td><td class="n">0.25</td><td class="n">5.8</td></tr>
+  </table>
+  <div class="box">
+    <h4>What this profile actually means</h4>
+    <p><b>Good news for foundations:</b> well drained, no shallow water table, and <b>low</b> shrink–swell.
+    Expansive-clay heave — the classic foundation-cracking mechanism — is not the risk here, because
+    kaolinitic Piedmont clays are relatively inert compared with the smectitic clays that cause trouble.</p>
+    <p><b>The catch:</b> the B horizon from 5 to 36 inches is <b>47.5% clay</b>. That is the layer every
+    footing, trench and drainfield will sit in. It holds water, drains more slowly than the sandy surface
+    suggests, and is slick when wet — which matters for trench stability on an 18% grade.</p>
+    <p><b>"Eroded" is a warning in the map unit name.</b> Only 5 inches of topsoil remain at 2% organic
+    matter, and below that organic matter collapses to 0.25%. Historic erosion has already stripped this
+    hillside once. Expect to import topsoil for any lawn or garden, and expect aggressive
+    erosion-control obligations during construction.</p>
+  </div>
+
+  <h2>15 · Foundation suitability <span class="b b-gis">GIS-derived</span> <span class="b b-pro">Needs professional</span></h2>
+  <table>
+    <tr><th>Foundation type</th><th>Assessment on this lot</th></tr>
+    <tr><td>Slab-on-grade</td><td><b>Poor fit as-is.</b> Would require a large level pad cut into an 18% grade, with the resulting cut face retained. Technically possible, economically wasteful here.</td></tr>
+    <tr><td>Crawlspace</td><td><b>Workable.</b> Accommodates moderate grade with stepped stem walls.</td></tr>
+    <tr><td>Pier / beam</td><td><b>Workable</b> for decks and projections; less common for the main structure locally.</td></tr>
+    <tr class="hi"><td><b>Daylight basement</b></td><td><b>Best fit.</b> 80 ft of fall lets the lower level open at grade on the downhill (lake) side. Converts the site's main liability into finished square footage and a water view. Matches existing homes on the street.</td></tr>
+    <tr><td>Stepped foundation</td><td><b>Likely required</b> in combination with any of the above.</td></tr>
+    <tr><td>Retaining walls</td><td><b>Likely required</b> for driveway cut, pad edges and usable yard.</td></tr>
+  </table>
+  <div class="box warn">
+    <h4>A geotechnical investigation is advisable — and the reason is specific</h4>
+    <p>Not boilerplate. Two site-specific triggers: <b>(1)</b> paralithic bedrock at a reported
+    <b>50 inches</b>. If you cut 6–10 ft into the hillside for a basement or driveway, you may well
+    reach rock, and rock excavation is a major cost variable that can swing a budget by tens of
+    thousands. <b>(2)</b> Footings bearing in a 47.5%-clay layer on a slope raise both bearing-capacity
+    and slope-stability questions that only borings can answer. Commission test borings <em>before</em>
+    closing if possible, or make the contract contingent on them.</p>
+  </div>
+  <div class="pfoot"><span>D · Soil characteristics &amp; foundation suitability</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 9 : SEPTIC + GARDEN ============ -->
+<section class="sheet" id="s-d2" data-nav="D · Septic &amp; gardening">
+  <div class="phead"><span class="t">D · SEPTIC SUITABILITY, GARDENING &amp; FARMING</span><span class="s">Items 16–18</span></div>
+
+  <h2>16 · Septic suitability <span class="b b-gis">GIS-derived</span> <span class="b b-pro">Needs professional</span></h2>
+  <table>
+    <tr><th>Question</th><th>Finding</th></tr>
+    <tr><td>Is public sewer available?</td><td><span class="b b-gap">Unverified</span> Not confirmed. Strong indicators point to <b>septic</b>: 1–2 acre lots throughout Waterpointe, RS180 zoning, and a build-out spanning 1988–2025. Must be confirmed with CCWA.</td></tr>
+    <tr><td>Soil suitability for septic</td><td><b>Moderate, with real constraints.</b> Well-drained Gwinnett with Ksat ≈1.3 in/hr is workable, but the 47.5%-clay B horizon is the limiting layer and the 10–25% slope complicates layout.</td></tr>
+    <tr><td>Depth available</td><td><b>50 in to paralithic bedrock.</b> Georgia requires a minimum thickness of suitable soil beneath trench bottoms; 50 in is workable but <b>not generous</b> and may force shallow, longer trenches.</td></tr>
+    <tr><td>Does slope create challenges?</td><td><b>Yes.</b> Drainfields must follow contours. Lines running across an 18% grade need careful level-trench construction; serial distribution or a pumped system may be required.</td></tr>
+    <tr><td>Setback from water</td><td><b>Critical and unquantified.</b> The drainfield would sit upslope of, and draining toward, a <b>public drinking-water reservoir</b>. Expect the Clayton County Board of Health to impose substantial setbacks from the CCWA boundary and possibly to restrict the usable rear portion of the lot entirely.</td></tr>
+    <tr><td>Perc / soil evaluation</td><td><b>Mandatory.</b> Georgia requires a county-approved soil evaluation before a septic permit.</td></tr>
+  </table>
+
+  <h3>How many bedrooms can this lot support on septic? <span class="b b-pro">Needs professional</span></h3>
+  <p>The brief asks this directly. An honest answer has to be conditional, because bedroom count is set
+  by the county health department from a <b>field</b> soil evaluation, not from mapped data.</p>
+  <table>
+    <tr><th>Factor</th><th>Effect on bedroom count</th></tr>
+    <tr><td>Lot area — 57,993 sq ft (1.33 ac)</td><td><b>Favourable.</b> Area is not the binding constraint; there is ample room for a primary field plus a full replacement field.</td></tr>
+    <tr><td>Texture — sandy clay loam over 47.5% clay</td><td><b>Limiting.</b> Slower-percolating soils require more square feet of trench per bedroom.</td></tr>
+    <tr><td>Depth to bedrock — 50 in</td><td><b>Limiting.</b> Restricts trench depth and may reduce the credited loading rate.</td></tr>
+    <tr><td>Slope — 18%</td><td><b>Limiting on layout</b>, not on capacity per se.</td></tr>
+    <tr><td>Proximity to public water supply</td><td><b>Potentially decisive.</b> Health-department setbacks could remove the downslope third of the lot from consideration.</td></tr>
+  </table>
+  <div class="box warn">
+    <h4>Reasoned expectation — explicitly an estimate, not an entitlement</h4>
+    <p>On area alone the lot could host a 4–5 bedroom system. Once the clay B horizon, the 50-inch
+    bedrock limit and reservoir setbacks are applied, a <b>3 to 4 bedroom</b> conventional system is the
+    realistic expectation, and a 4-bedroom approval may require a larger field, an engineered/pumped
+    design, or both. <b>Do not buy this lot intending to build a 5-bedroom house on septic without a
+    completed Level 3 soil evaluation in hand.</b> If the house programme includes a second in-law
+    suite (item 33), the bedroom count driving septic sizing rises accordingly — making this the single
+    most important pre-purchase test alongside the plat.</p>
+  </div>
+
+  <h3>If no public water: ideal well depth <span class="b b-gap">Unverified</span></h3>
+  <p>In the Georgia Piedmont, domestic wells draw from <b>fractured crystalline bedrock</b> beneath the
+  saprolite, not from the soil profile. With paralithic rock at ~50 in here, a well would case through
+  the weathered zone and seek water-bearing fractures below. Regional practice puts productive domestic
+  wells in this setting commonly in the <b>150–400 ft</b> range, with casing set well below the
+  soil/rock interface and grouted to protect water quality. Shallow wells are a poor idea on this site
+  specifically because the lot drains toward — and any septic field would sit above — a public water
+  supply. <b>These are regional norms, not a site prediction.</b> A licensed Georgia well driller and
+  the Georgia EPD well-construction standards govern. In practice, public water is very likely available
+  (CCWA), which makes this question largely academic — confirm first.</p>
+
+  <h2>17 · Gardening suitability <span class="b b-off">Official</span></h2>
+  <table class="kv">
+    <tr><td>Soil pH</td><td><b>5.8 throughout</b> — moderately acidic; below the 6.0–6.8 optimum for most vegetables</td></tr>
+    <tr><td>Drainage</td><td>Well drained — good</td></tr>
+    <tr><td>Organic matter</td><td><b>2.0% in the top 5 in; 0.25% below</b> — low</td></tr>
+    <tr><td>Texture</td><td>Sandy clay loam surface (55% sand) over clay-rich subsoil (47.5% clay)</td></tr>
+    <tr><td>Available water capacity</td><td>0.14 cm/cm — moderate</td></tr>
+    <tr><td>Raised beds advisable?</td><td><b>Yes.</b> Eroded thin topsoil, clay subsoil and an 18% grade all point to terraced raised beds — which also address the slope.</td></tr>
+    <tr><td>Imported topsoil / compost needed?</td><td><b>Yes</b>, for any productive vegetable growing</td></tr>
+  </table>
+  <div class="pfoot"><span>D · Septic suitability, gardening &amp; farming</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 10 : PLANTING + UTILITIES ============ -->
+<section class="sheet" id="s-d3" data-nav="D/E · Planting plan &amp; utilities">
+  <div class="phead"><span class="t">D · PLANTING PLAN &nbsp;·&nbsp; E · UTILITIES</span><span class="s">Items 18–23</span></div>
+
+  <h2>18 · Gardening and farming — year-round plan <span class="b b-gis">GIS-derived</span></h2>
+  <p>Matched to this site's measured climate (Section L: 265-day frost-free season, mean annual 17.2 °C,
+  1,196 mm rain) and its measured soil (pH 5.8, sandy clay loam, low organic matter). Hampton sits in
+  <b>USDA hardiness zone 8a</b>.</p>
+  <table>
+    <tr><th>Category</th><th>Suitable plants</th><th>Planting season</th><th>Soil requirements on this lot</th></tr>
+    <tr><td><b>Vegetables<br>(cool season)</b></td><td>Collards, kale, turnips, mustard greens, cabbage, broccoli, carrots, beets, spinach, lettuce, English peas, onions, garlic</td><td>Sow Aug–Sep for autumn/winter; Feb–Mar for spring. Many overwinter unprotected in 8a.</td><td>Lime to pH 6.2–6.5; 2–3 in compost. Raised beds strongly advised.</td></tr>
+    <tr><td><b>Vegetables<br>(warm season)</b></td><td>Okra, southern/field peas, sweet potato, tomatoes, peppers, aubergine, squash, cucumber, beans, sweet corn, melons</td><td>After last frost, mid-Apr to May; succession to Jul</td><td>Same liming; mulch heavily — July mean max 31 °C with 117 mm rain drives both drought stress and disease.</td></tr>
+    <tr><td><b>Fruits</b></td><td><b>Blueberries (rabbiteye) — ideal</b>, muscadine grapes, figs, persimmon, blackberries, pomegranate</td><td>Plant bare-root/dormant Nov–Feb</td><td><b>Blueberries thrive at pH 4.5–5.5 — do NOT lime their beds.</b> The native 5.8 is already close; acidify slightly. Figs and muscadines are reliably hardy here.</td></tr>
+    <tr><td><b>Tree fruit</b></td><td>Peaches, plums, pears (fire-blight-resistant cvs.), apples (low-chill cvs.), pecan</td><td>Dormant season Nov–Feb</td><td>Well-drained slope is genuinely advantageous — cold air drains downhill, reducing late-frost damage to blossom. Avoid the lowest ground.</td></tr>
+    <tr><td><b>Herbs</b></td><td>Rosemary, thyme, oregano, sage, mint, chives, parsley (perennial-ish in 8a); basil, coriander, dill (annual)</td><td>Spring; Mediterranean herbs Apr–May</td><td>Mediterranean herbs need sharp drainage — plant on the upper slope or in raised/gravelly beds. They suit the native pH well.</td></tr>
+    <tr><td><b>South Asian kitchen crops</b></td><td>Okra (bhindi), bottle gourd, ridge gourd, bitter gourd, Indian aubergine, curry leaf (pot &amp; protect in winter), methi/fenugreek, coriander, turmeric, ginger, chillies</td><td>Warm season May–Jul; methi &amp; coriander in cool season</td><td>Gourds need trellising and steady water. Turmeric/ginger need rich, loose, moisture-retentive soil — raised beds with heavy compost. Curry leaf is marginal in 8a; overwinter in a container.</td></tr>
+    <tr><td><b>Trees (shade/ornamental)</b></td><td>Native oaks, tulip poplar, red maple, dogwood, redbud, serviceberry, crape myrtle</td><td>Dormant season</td><td>The lot is already wooded; retain mature canopy on the slope wherever possible — it is the cheapest erosion control available.</td></tr>
+  </table>
+  <h4>Amendments indicated by the actual soil data</h4>
+  <table>
+    <tr><th>Amendment</th><th>Indicated?</th><th>Why — from the measured data</th></tr>
+    <tr><td><b>Lime</b></td><td><b>Yes</b> (general veg)</td><td>pH 5.8 vs 6.0–6.8 optimum. <b>Except</b> blueberry beds.</td></tr>
+    <tr><td><b>Compost / organic matter</b></td><td><b>Yes — priority</b></td><td>Only 2% OM in 5 in of topsoil, 0.25% below. This is the biggest single deficiency.</td></tr>
+    <tr><td>Imported topsoil</td><td><b>Yes</b></td><td>"Eroded" phase; thin A horizon</td></tr>
+    <tr><td><b>Mulch</b></td><td><b>Yes</b></td><td>18% slope + eroded soil = active erosion risk; mulch also buffers summer heat</td></tr>
+    <tr><td>Sulfur</td><td>Only for acid-lovers</td><td>Native pH already acidic; sulfur only to push blueberries below 5.5</td></tr>
+    <tr><td>Fertiliser</td><td><b>Test first</b></td><td>No nutrient (N-P-K) values are published for this map unit, so any recommendation would be guesswork</td></tr>
+  </table>
+  <div class="box"><p><b>Confirm with a soil test.</b> The University of Georgia Extension office for Clayton
+  County provides inexpensive soil testing that returns actual pH, P, K and lime requirement for your
+  specific beds. The NRCS figures above are map-unit <em>averages</em> across thousands of acres, not
+  measurements of this lot.</p></div>
+
+  <h2>19–23 · Utilities &amp; infrastructure <span class="b b-gap">Largely unverified</span></h2>
+  <div class="box bad">
+    <h4>Utilities are the weakest-evidenced part of this report — and they are a cost cliff</h4>
+    <p>None of the five utilities below could be confirmed from public records for this specific parcel.
+    For a vacant lot this is not a minor gap: an unavailable sewer or a long water/power run can add tens
+    of thousands to the project. <b>Every row needs a written availability letter before closing.</b></p>
+  </div>
+  <table>
+    <tr><th>Utility</th><th>Status</th><th>What is actually known / who to ask</th></tr>
+    <tr><td><b>19 Water</b></td><td><span class="b b-gap">Unverified</span></td><td><b>Clayton County Water Authority</b> is the county provider and its reservoir adjoins the lot. With 60+ homes on Edgewater Dr built since 1988, a public main at the road is very likely. Confirm tap availability, meter size, and connection/impact fees. CCWA: ccwa.us</td></tr>
+    <tr><td><b>20 Sewer</b></td><td><span class="b b-gap">Unverified</span> — <b>assume septic</b></td><td>1–2 acre lots and RS180 zoning strongly suggest no public sewer. If septic is required, items 16 and 33 (in-law suite) are directly constrained. Ask CCWA for sewer availability and, if none, the distance to the nearest main.</td></tr>
+    <tr><td><b>21 Electricity</b></td><td><span class="b b-gap">Unverified</span></td><td>Served by either Georgia Power or a local EMC — not determined. Overhead service exists along a developed street; confirm transformer capacity, service drop distance and whether underground service is required by covenant.</td></tr>
+    <tr><td><b>22 Natural gas / propane</b></td><td><span class="b b-gap">Unverified</span></td><td>Natural gas availability in this semi-rural pocket is uncertain; propane is universally available as a fallback. Several neighbouring homes list gas log fireplaces, which hints at gas or propane service nearby.</td></tr>
+    <tr><td><b>23 Internet</b></td><td><span class="b b-gap">Unverified</span></td><td>Check the FCC National Broadband Map (<code>broadbandmap.fcc.gov</code>) by address — it is authoritative, free, and reports fibre/cable/DSL/fixed-wireless by provider with advertised speeds. Starlink is a universal fallback. Do not rely on provider marketing maps.</td></tr>
+  </table>
+  <div class="pfoot"><span>D · Planting plan &amp; E · Utilities</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 11 : LAKE / DOCK ============ -->
+<section class="sheet dense" id="s-f" data-nav="F · Lake, dock &amp; waterfront">
+  <div class="phead"><span class="t">F · LAKE, DOCK &amp; WATERFRONT</span><span class="s">Items 24–29</span></div>
+
+  <div class="box bad">
+    <h4>The waterfront premise of this listing does not survive examination</h4>
+    <p>This is the most consequential section of the report. The lot is marketed on its water. Three
+    independent findings undercut that: <b>(1)</b> the parcel boundary stops 59–80 ft short of the water;
+    <b>(2)</b> the intervening land and the entire reservoir are owned by a <b>public water utility</b>;
+    <b>(3)</b> that utility manages the lake as a <b>drinking-water supply</b> with permit-only access,
+    a four-month annual closure, and a swimming ban. If you are buying for lake <em>use</em> rather
+    than lake <em>view</em>, this lot probably does not do what you want.</p>
+  </div>
+
+  <h2>24 · Waterfront access <span class="b b-off">Official</span></h2>
+  <table>
+    <tr><th>Form of access</th><th>Applies?</th><th>Evidence</th></tr>
+    <tr><td>Direct lake frontage</td><td><b>NO</b></td><td>Parcel polygon contains zero water; nearest water 58.7 ft beyond the rear boundary (minimum), ~80 ft on the centreline</td></tr>
+    <tr><td>Riparian / waterfront rights</td><td><b>Apparently none</b></td><td>Ownership does not extend to the water's edge; CCWA parcel <code>05045 051001</code> intervenes</td></tr>
+    <tr><td>Deeded lake access</td><td><span class="b b-gap">Unverified</span></td><td>Could exist via the Waterpointe declaration. A neighbouring listing referenced "private access to lake", so <b>an HOA common-area access right may exist</b> — this must be read in the CC&amp;Rs</td></tr>
+    <tr><td>Shared / HOA common access</td><td><b>Possible</b></td><td>See above — the HOA, not the lot, would hold it</td></tr>
+    <tr><td>Public access</td><td><b>Yes, by permit</b></td><td>CCWA operates a public access point at 143 Northbridge Road, Hampton</td></tr>
+  </table>
+  <p><b>Practical reading:</b> realistic access is a <em>CCWA permit</em> and/or an <em>HOA
+  common-area right</em> — not a private right attached to Lot 23. Verify both in writing; the
+  distinction matters for resale as much as for enjoyment.</p>
+
+  <h2>25 · Lakeside terrain — road → house → lake <span class="b b-gis">GIS-derived</span></h2>
+  <table>
+    <tr><th>Characterisation</th><th>Applies?</th></tr>
+    <tr><td>Gentle</td><td>No</td></tr>
+    <tr class="hi"><td><b>Moderate</b> (18.5% over the final 50 ft to the water)</td><td><b>Yes</b></td></tr>
+    <tr><td>Steep</td><td>Locally, 23.5% in the upper slope</td></tr>
+    <tr><td>Requires stairs for lake access</td><td><b>Very likely</b> — 80 ft of descent, and the final stretch crosses land you do not own</td></tr>
+    <tr><td>Requires retaining wall</td><td>Likely for the building pad and driveway</td></tr>
+    <tr><td>Requires significant grading</td><td>Yes</td></tr>
+  </table>
+  <p>Walking down to the water means descending the remaining fall <b>and then crossing ~60–80 ft of
+  CCWA property</b>. Any permanent path, steps or structure there needs CCWA's permission.</p>
+
+  <h2>26 · Dock feasibility <span class="b b-off">Official</span></h2>
+  <div class="box bad">
+    <h4>Assume a private dock is not achievable</h4>
+    <p>A dock would sit on and over land and water owned by the Clayton County Water Authority and held
+    for <b>public drinking-water supply</b>. Public water utilities essentially never license private
+    residential docks on supply reservoirs — the contamination, liability and access-control reasons are
+    structural, not discretionary. CCWA's published rules reinforce this: permit-controlled access,
+    closure November–February, and a swimming/wading ban. No Georgia DNR coastal dock process applies
+    (that governs tidal waters) — the decision-maker is <b>CCWA</b>.</p>
+  </div>
+  <table>
+    <tr><th>Factor to research</th><th>Finding</th></tr>
+    <tr><td>Lake authority requirements</td><td><b>CCWA controls the reservoir and the shoreline strip</b> — the governing party</td></tr>
+    <tr><td>HOA restrictions on docks</td><td><span class="b b-gap">Unverified</span> — read the Waterpointe CC&amp;Rs</td></tr>
+    <tr><td>County / state regulations</td><td>Clayton County land disturbance + Georgia EPD water-supply watershed rules</td></tr>
+    <tr><td>Waterfront setbacks, dock size limits, shared-dock rules, permits</td><td><b>Moot unless CCWA grants access in the first place</b></td></tr>
+  </table>
+  <p><b>Action:</b> put the question to CCWA in writing before closing and keep the answer. If a dock is
+  essential to your purpose, this is a condition precedent, not a detail.</p>
+
+  <h2>27 · Lake depth / bathymetry <span class="b b-gap">Unverified</span></h2>
+  <p>No bathymetry, average/maximum depth or seasonal drawdown range was obtainable publicly. The HOA
+  describes a <b>~250-acre lake</b>. The lidar normal pool is <b>801.1 ft</b>, but that is a single
+  epoch — CCWA operates the reservoir for supply, so levels fluctuate with drought and demand, which
+  affects how the view reads in a dry summer. Request operating-level data from CCWA.</p>
+
+  <h2>28 · Boating <span class="b b-off">Official</span></h2>
+  <table>
+    <tr><th>Activity</th><th>Status on J.W. Smith Reservoir</th></tr>
+    <tr><td>Canoes / kayaks / non-motorised</td><td><b>Permitted</b> in season, under CCWA permit</td></tr>
+    <tr><td>Motorised boats, wake boats, water skiing</td><td><b>Not supported.</b> A water-supply reservoir managed for fishing, canoeing and wildlife viewing. Confirm the explicit prohibition with CCWA.</td></tr>
+    <tr><td>Swimming / wading</td><td><b>Expressly prohibited</b></td></tr>
+    <tr><td>Private boat storage at the shore</td><td>Not available — you do not own to the water</td></tr>
+    <tr><td>Boat ramp / marina</td><td>CCWA public access at 143 Northbridge Rd; no marina</td></tr>
+    <tr><td>Seasonal access</td><td><b>J.W. Smith closed entirely November–February.</b> March–October: Mon–Wed and Sat–Sun, 7am–7pm (closed Thu–Fri)</td></tr>
+    <tr><td>Permit cost</td><td>$5 day pass · $25 annual · $40 annual "Plus" — <b>per vehicle</b>, permit holder must attend</td></tr>
+  </table>
+
+  <h2>29 · Fishing <span class="b b-off">Official</span></h2>
+  <p>CCWA runs a managed fishing programme on its reservoirs with a season opening in March, and
+  describes J.W. Smith as a place where visitors "come fishing, canoeing, and even come out for picnics."
+  Access requires a <b>CCWA permit in addition to</b> a Georgia state fishing licence, and is bounded by
+  the seasonal calendar above. Species present, stocking programme, catch limits and permitted methods
+  were <b>not</b> retrievable in detail <span class="b b-gap">Unverified</span> — request the current
+  fishing regulations sheet from CCWA. <b>Fishing from "your" shoreline is not an option</b>, because the
+  shoreline is not yours; fishing happens at CCWA's designated access points.</p>
+  <div class="pfoot"><span>F · Lake, dock &amp; waterfront</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 12 : HOA / ZONING / ADU ============ -->
+<section class="sheet" id="s-g" data-nav="G · HOA, zoning &amp; land use">
+  <div class="phead"><span class="t">G · HOA, COVENANTS, ZONING &amp; LAND USE</span><span class="s">Items 30–33</span></div>
+
+  <h2>30 · HOA <span class="b b-off">Official</span> <span class="b b-gap">Financials unverified</span></h2>
+  <table class="kv">
+    <tr><td>HOA</td><td><b>Waterpointe Community Association</b> — waterpointehoa.com</td></tr>
+    <tr><td>Subject to HOA?</td><td><b>Yes.</b> The association states that protective covenants are in place across <b>all four phases</b> of Waterpointe</td></tr>
+    <tr><td>Amenities (per the association)</td><td>Private <b>swimming pool</b>, <b>tennis courts</b>, <b>clubhouse</b>; wooded, wildlife-friendly setting bordering a ~250-acre lake; active Neighborhood Watch</td></tr>
+    <tr><td>Annual dues</td><td><span class="b b-gap">Low confidence</span> A third-party aggregator reports HOA fees in Waterpointe of <b>$13–$39 per month</b> ($156–$468/yr). <b>Unverified</b> — obtain the current assessment schedule from the association directly.</td></tr>
+    <tr><td>Transfer fees, special assessments, reserves, budget</td><td><span class="b b-gap">Unverified</span> — request the budget, reserve study and any pending special assessments</td></tr>
+    <tr><td>Boat / dock facilities</td><td>None evidenced as HOA-owned; the lake is CCWA's</td></tr>
+  </table>
+  <div class="box">
+    <p>Dues in the $156–$468/yr range would be <b>remarkably low</b> for a community operating a pool,
+    tennis courts and a clubhouse. If accurate, scrutinise the <b>reserve funding</b> — under-reserved
+    associations with ageing amenities are where surprise special assessments come from. Ask for the last
+    three years of financials and minutes.</p>
+  </div>
+
+  <h2>31 · HOA covenants <span class="b b-gap">Unverified — obtain before closing</span></h2>
+  <p>The association publishes its covenants on its own website under the newsletter/documents tab. They
+  were not retrieved for this report, and they are <b>second only to the plat</b> in importance because
+  they can independently prohibit things zoning permits. Read specifically for:</p>
+  <div class="grid2">
+    <div>
+      <ul>
+        <li>Declaration, CC&amp;Rs and all <b>amendments</b></li>
+        <li><b>Architectural review</b> — minimum house size, materials, roof pitch, garage orientation, plan approval</li>
+        <li>Minimum/maximum square footage (drives the cost estimate in item 43)</li>
+        <li><b>Waterfront and dock restrictions</b></li>
+        <li>Fence restrictions (relevant on a sloped, wooded lot)</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><b>Outbuilding / accessory structure</b> limits</li>
+        <li>RV and boat storage</li>
+        <li><b>Livestock and poultry</b> — see item 34</li>
+        <li><b>Short-term rental</b> prohibitions — see item 35</li>
+        <li>Tree removal / land-disturbance approval, and any <b>build-by</b> deadline on vacant lots</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box warn"><p><b>Specific risk for a vacant lot:</b> many Georgia subdivision declarations
+  include a <b>time limit to commence construction</b> after purchase, and mandatory architectural
+  approval of plans. Confirm there is no clock you would be inheriting, and no minimum-size requirement
+  that forces a larger (costlier) house than you intend.</p></div>
+
+  <h2>32 · County zoning — RS180 <span class="b b-off">Zone confirmed</span> <span class="b b-gap">Standards unverified</span></h2>
+  <table class="kv">
+    <tr><td>Zoning designation</td><td><b>RS180</b> — Clayton County single-family residential (confirmed from the assessor's parcel record; all 60+ Edgewater Dr lots share it)</td></tr>
+    <tr><td>Permitted residential use</td><td>Single-family detached — the intended use is clearly permitted</td></tr>
+    <tr><td>Minimum lot size</td><td><span class="b b-gap">Unverified</span>. The designation implies an 18,000 sq ft minimum. At <b>57,993 sq ft</b> this lot is roughly <b>3.2× any such minimum</b> — lot area is not a constraint.</td></tr>
+    <tr><td>Setbacks (front / side / rear)</td><td><span class="b b-gap">Unverified — do not assume.</span> Not obtainable from public sources at the time of writing. Because the lot is only <b>148 ft wide</b>, the <b>side</b> setbacks are what govern the maximum house width, so this figure directly determines what you can build.</td></tr>
+    <tr><td>Max building coverage / impervious limit</td><td><span class="b b-gap">Unverified</span> — and see the water-supply watershed caution below</td></tr>
+    <tr><td>Height limit, accessory structures, ADUs, agricultural provisions</td><td><span class="b b-gap">Unverified</span></td></tr>
+  </table>
+  <div class="box warn">
+    <h4>A regulatory layer that may not appear on the zoning map</h4>
+    <p>Georgia's Part 5 Environmental Planning Criteria impose <b>water-supply watershed protection</b>
+    requirements — stream buffers and <b>impervious-surface caps</b> — within a seven-mile radius upstream
+    of a public water-supply intake, with stricter rules for small watersheds. This lot drains directly
+    into a public water-supply reservoir. Whether a watershed-protection overlay, buffer or impervious
+    cap applies to Lot 23 <b>was not determined</b> and could materially limit house footprint, driveway
+    and pool. Ask Clayton County Community Development ((770) 477-3569) specifically about
+    water-supply-watershed overlay status for parcel <code>05050A A003</code>. <b>This is a question most
+    buyers never think to ask, and on this particular lot it is a live one.</b></p>
+  </div>
+  <div class="box bad">
+    <h4>Active development moratorium <span class="b b-off">Official</span></h4>
+    <p><b>Resolution 2026-120</b> (adopted 2 June 2026) extends a moratorium on accepting applications
+    related to the development of <b>any new construction of single-family residential subdivisions</b> or
+    multi-family developments, running until the county adopts a revised code or <b>31 December 2026</b>,
+    whichever comes first. The county is also separately reviewing <b>minimum lot sizes</b>. On its face
+    this targets new <em>subdivisions</em> rather than one house on an already-platted lot — but the wording
+    is broad and the consequence of being wrong is a stalled permit. <b>Get a written determination</b>
+    that a single-family building permit on this existing lot is unaffected.</p>
+  </div>
+
+  <h2>33 · Second in-law suite / ADU <span class="b b-gap">Unverified</span></h2>
+  <p>Whether a <b>second independent dwelling unit</b> is permitted could not be determined. Three gates
+  must all open, and any one can stop it:</p>
+  <table>
+    <tr><th>Gate</th><th>Status</th><th>Note</th></tr>
+    <tr><td>Zoning (RS180 max dwelling units, ADU provisions)</td><td><span class="b b-gap">Unverified</span></td><td>Many single-family districts cap at one dwelling unit and forbid a second kitchen</td></tr>
+    <tr><td>HOA covenants</td><td><span class="b b-gap">Unverified</span></td><td>Declarations frequently prohibit accessory apartments outright</td></tr>
+    <tr><td><b>Septic capacity</b></td><td><b>Likely the binding constraint</b></td><td>If the lot is on septic, a second full suite adds bedrooms to the design flow and may exceed what the soil will support (item 16)</td></tr>
+  </table>
+  <p>The encouraging precedent is physical rather than legal: the <b>80 ft of fall suits a daylight
+  basement</b>, and neighbouring homes advertise basements "ideal for multi-generational living." An
+  <em>integrated</em> lower-level suite sharing the main structure's utilities is far more likely to be
+  approved than a detached second dwelling — and it is what the terrain naturally produces.</p>
+  <div class="pfoot"><span>G · HOA, covenants, zoning &amp; land use</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 13 : FARMING / STR / ENVIRONMENTAL ============ -->
+<section class="sheet" id="s-hij" data-nav="H/I/J · Farming, STR, environmental">
+  <div class="phead"><span class="t">H · HOBBY FARMING &nbsp;·&nbsp; I · SHORT-TERM RENTAL &nbsp;·&nbsp; J · ENVIRONMENTAL</span><span class="s">Items 34–42</span></div>
+
+  <h2>34 · Poultry &amp; small livestock <span class="b b-gap">Unverified</span></h2>
+  <p>Two independent authorities must <b>both</b> permit animals, and the HOA is usually the stricter of
+  the two. Neither was verified for Waterpointe.</p>
+  <table>
+    <tr><th>Animal</th><th>County (RS180)</th><th>HOA covenants</th></tr>
+    <tr><td>Chickens, ducks, geese</td><td><span class="b b-gap">Unverified</span></td><td><span class="b b-gap">Unverified</span> — commonly prohibited in platted suburban subdivisions</td></tr>
+    <tr><td>Rabbits</td><td><span class="b b-gap">Unverified</span></td><td>Often treated as pets rather than livestock</td></tr>
+    <tr><td>Goats, other small livestock</td><td><span class="b b-gap">Unverified</span></td><td>Unlikely to be permitted</td></tr>
+    <tr><td>Bees</td><td><span class="b b-gap">Unverified</span></td><td>Variable</td></tr>
+  </table>
+  <div class="box"><p><b>Honest expectation:</b> Waterpointe is an established subdivision of $300k–$860k
+  homes with a pool, tennis courts and architectural covenants. Declarations for communities of this type
+  very commonly prohibit poultry and livestock expressly. Treat hobby farming as <b>probably not
+  available</b> until the CC&amp;Rs say otherwise, and do not pay a premium for the possibility. Note too
+  that animal husbandry immediately upslope of a <b>public drinking-water reservoir</b> attracts
+  additional scrutiny regardless of what the covenants say.</p></div>
+
+  <h2>35 · Short-term rental feasibility <span class="b b-off">Official</span></h2>
+  <div class="box bad">
+    <h4>Clayton County is not accepting short-term rental applications</h4>
+    <p><b>Resolution 2026-153</b> establishes a moratorium on the acceptance of <b>any applications
+    related to … short term rentals</b> (together with boarding homes, group homes, personal care homes
+    and community living arrangements). Verified terms from the resolution text:</p>
+    <ul>
+      <li><b>Duration:</b> until <b>31 December 2026</b>, or until a modified ordinance is adopted,
+          "unless said moratorium is extended for good cause shown"</li>
+      <li><b>Effective:</b> from the date of adoption</li>
+      <li><b>Grandfathering:</b> no effect on approvals or permits <b>previously issued</b> — which does
+          not help a vacant lot with no permit</li>
+      <li><b>Exemption route:</b> an application may be filed with Community Development; the Zoning
+          Administrator must schedule a Board of Commissioners hearing within 30 days, and the Board
+          <em>may</em> grant an exemption if the proposal conforms to the ordinances under review</li>
+    </ul>
+    <p>The county's stated purpose is to <b>revise the definitions</b> of these uses — so the post-moratorium
+    rules are, by design, unknown. <b>An STR-dependent investment case cannot be underwritten on this
+    parcel today.</b> Layer on top the unverified HOA position (item 31), which can prohibit STRs
+    permanently regardless of what the county eventually allows.</p>
+  </div>
+  <p>Not determined, and all downstream of the above: minimum rental period, permit mechanics, occupancy
+  limits, parking, noise rules, and hotel/occupancy tax obligations. <span class="b b-gap">Unverified</span></p>
+
+  <h2>36–42 · Environmental &amp; geological due diligence</h2>
+  <table>
+    <tr><th>#</th><th>Item</th><th>Status</th><th>Finding / action</th></tr>
+    <tr><td>36</td><td>Elevation Certificate</td><td><span class="b b-gap">None found</span></td><td><b>Probably unnecessary.</b> Elevation certificates exist to price flood insurance in SFHAs; in Zone X with no BFE there is nothing to certify against. A lender may still ask — a surveyor can produce one.</td></tr>
+    <tr><td>37</td><td>Survey (boundary / ALTA / topographic)</td><td><span class="b b-gap">None found</span></td><td><b>Commission a boundary + topographic survey.</b> On a 148-ft-wide sloping lot where side setbacks govern the house width and all contours here are lidar estimates, this is not optional — it is the document the architect and grading engineer will work from.</td></tr>
+    <tr><td>38</td><td>Geotechnical / soil report</td><td><span class="b b-gap">None found</span></td><td>Advisable — bedrock at ~50 in plus footings in 47.5% clay on a slope (item 15)</td></tr>
+    <tr><td>39</td><td>Perc test / soil evaluation</td><td><span class="b b-gap">None found</span></td><td><b>Mandatory if septic.</b> Determines the permitted bedroom count. Highest-priority test alongside the survey.</td></tr>
+    <tr><td>40</td><td>GPR / subsurface investigation</td><td><span class="b b-gap">None found</span></td><td>Not normally warranted for a residential lot; test borings are the proportionate tool here</td></tr>
+    <tr><td>41</td><td>Radon</td><td><span class="b b-gap">Unverified</span></td><td>Clayton County's specific EPA radon zone <b>could not be confirmed</b> — EPA publishes Georgia as a raster map image from which the county designation is not machine-readable, and I will not guess it. Georgia spans Zones 1–3. <b>Test the finished house</b> (the EPA's own guidance is that elevated radon occurs in all three zones), and consider passive radon-resistant construction, which is cheap at build time — especially relevant if you build the daylight basement this lot invites.</td></tr>
+    <tr><td>42</td><td>Sinkholes / karst</td><td><b>Low risk</b> <span class="b b-gis">GIS-derived</span></td><td>The parcel sits in <b>crystalline Piedmont</b> bedrock — the soil is classified as kaolinitic Rhodic Kanhapludults over <b>paralithic (weathered igneous/metamorphic) rock</b>, not limestone. Sinkhole and karst subsidence are characteristic of carbonate terrain and are <b>not</b> a meaningful hazard in this geological setting. No specific sinkhole reports or subsidence claims were researched.</td></tr>
+  </table>
+  <div class="pfoot"><span>H/I/J · Hobby farming, STR &amp; environmental</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 14 : CONSTRUCTION FEASIBILITY ============ -->
+<section class="sheet" id="s-k" data-nav="K · Construction feasibility &amp; cost">
+  <div class="phead"><span class="t">K · RESIDENTIAL CONSTRUCTION FEASIBILITY &amp; COST</span><span class="s">Items 43–44 + cost brief</span></div>
+
+  <h2>43 · Can the lot accommodate the desired programme? <span class="b b-gis">GIS-derived</span></h2>
+  <p>The lot's <b>area</b> (1.33 ac) is generous. Its <b>shape</b> (148 ft wide × 419 ft deep) and its
+  <b>grade</b> (18%) are the real constraints: a narrow, deep, consistently sloping rectangle.</p>
+  <table>
+    <tr><th>Element</th><th>Feasibility</th><th>Governing constraint</th></tr>
+    <tr><td>Building envelope</td><td><b>Adequate but width-limited</b></td><td>Only 148 ft wide (130 ft at the road). Unverified RS180 <b>side setbacks</b> dictate maximum house width — the single most important missing number for design.</td></tr>
+    <tr><td>House footprint</td><td><b>Yes</b></td><td>Best sited in the upper third, near the road, where access is shortest and the view is highest</td></tr>
+    <tr><td>Garage</td><td><b>Yes</b></td><td>Side-entry garage needs width; front-entry needs driveway length on grade</td></tr>
+    <tr><td>Driveway</td><td><b>Yes, with design care</b></td><td><b>23.5% natural grade in the 60–110 ft band.</b> Must be cut/benched to reach a usable gradient (typically ≤15%)</td></tr>
+    <tr><td>Septic field</td><td><b>Probable, unconfirmed</b></td><td>Needs contour-following trenches; reservoir setbacks may remove the lower lot (item 16)</td></tr>
+    <tr><td>Well</td><td>Likely unnecessary</td><td>Public water probably available (item 19)</td></tr>
+    <tr><td>Pool</td><td><b>Possible but expensive</b></td><td>Requires a second level bench and retaining; may also run into an impervious-surface cap (item 32)</td></tr>
+    <tr><td>Patio / flat yard</td><td><b>Limited without retaining</b></td><td>No natural level ground anywhere on the lot</td></tr>
+    <tr><td>Retaining walls</td><td><b>Expect them</b></td><td>Driveway cut, pad edges, yard terracing</td></tr>
+    <tr><td>Lake setback</td><td><b>Unquantified</b></td><td>CCWA boundary + any watershed buffer</td></tr>
+  </table>
+
+  <h2>44 · Grading &amp; fill <span class="b b-gis">GIS-derived</span> <span class="b b-pro">Needs professional</span></h2>
+  <table class="kv">
+    <tr><td>Existing grades</td><td>889.99 ft at road → 814.94 ft at rear boundary; 18.3% average, 23.5% max over 50 ft</td></tr>
+    <tr><td>Required grading</td><td><b>Substantial.</b> A level pad on an 18% slope needs cut on the uphill side and fill on the downhill side</td></tr>
+    <tr><td>Cut/fill strategy</td><td><b>Balanced cut-and-fill is the efficient approach</b> — reuse cut material on site as engineered fill and avoid both import and export haulage</td></tr>
+    <tr><td>Imported fill likely?</td><td><b>Probably not required</b> if cut/fill is balanced — a genuine cost saving on a sloped lot</td></tr>
+    <tr><td>Retaining walls</td><td>Likely; engineered design required above modest heights</td></tr>
+    <tr><td>County approval</td><td><b>Yes.</b> Expect a land-disturbance permit, grading plan and an erosion &amp; sedimentation control plan — scrutinised here because the discharge point is a public water supply</td></tr>
+  </table>
+
+  <h2>Estimated cost to build a 4-bedroom home comparable to the street <span class="b b-pro">Planning-level estimate</span></h2>
+  <div class="box warn">
+    <p><b>Read this as a planning-level order of magnitude, not a quotation.</b> It is built from verified
+    local market data (county appraisals and recorded sales on Edgewater Drive) plus
+    <b>general metro-Atlanta construction cost ranges that were not independently verified for 2026</b>.
+    Replace every figure with builder bids before acting. HOA minimum-size requirements (item 31) are
+    unverified and could force a larger house than assumed.</p>
+  </div>
+  <h4>Verified local benchmarks</h4>
+  <table>
+    <tr><th>Benchmark</th><th>Value</th><th>Source</th></tr>
+    <tr><td>Waterpointe median recorded sale (12 mo to 20 Sep 2026)</td><td><b>$454,950</b> &nbsp;·&nbsp; <b>$120/sq ft</b> &nbsp;·&nbsp; 34 days on market</td><td>MLS aggregation</td></tr>
+    <tr><td>Edgewater Dr improved-home county appraisals</td><td><b>$296,000 – $856,900</b></td><td>Clayton Co. assessor</td></tr>
+    <tr><td>Water-view homes near Lot 23</td><td>12390 (Lot 22) $519,400 · 12374 (Lot 20) $736,900 · 12426 (Lot 28) $633,300</td><td>Clayton Co. assessor</td></tr>
+    <tr><td>House sizes in the community</td><td>2,592 – 6,010 sq ft</td><td>Subdivision data</td></tr>
+    <tr><td>Vacant-lot county appraisal</td><td>$60,000 (uniform across Edgewater vacant lots)</td><td>Clayton Co. assessor</td></tr>
+  </table>
+  <h4>Assumed programme: ~3,200 sq ft above grade, 4 bed, daylight basement (partly finished), 2-car garage</h4>
+  <table>
+    <tr><th>Cost component</th><th class="n">Low</th><th class="n">High</th><th>Note</th></tr>
+    <tr><td>Land acquisition</td><td class="n">$95,000</td><td class="n">$125,000</td><td>Asking $125k vs $60k county appraisal — <b>negotiable</b> (four unsold vacant lots nearby)</td></tr>
+    <tr><td>Pre-construction: survey, geotech, perc, architecture, engineering, permits, HOA review</td><td class="n">$25,000</td><td class="n">$55,000</td><td>Higher than a flat lot: topo survey + grading design + possible borings</td></tr>
+    <tr><td><b>Site work premium for 18% slope</b>: clearing, cut/fill, driveway benching, retaining walls, erosion control</td><td class="n">$55,000</td><td class="n">$140,000</td><td><b>The single largest variable.</b> Rock excavation (bedrock ~50 in) is the main upside risk</td></tr>
+    <tr><td>Utilities: water tap, power, septic system (or sewer connection)</td><td class="n">$25,000</td><td class="n">$60,000</td><td>Engineered/pumped septic on slope sits at the high end</td></tr>
+    <tr><td>House shell + finish, 3,200 sq ft @ $150–$225/sq ft</td><td class="n">$480,000</td><td class="n">$720,000</td><td>Mid to upper-mid finish matching the street</td></tr>
+    <tr><td>Daylight basement (incremental, partly finished)</td><td class="n">$45,000</td><td class="n">$105,000</td><td>Terrain makes this efficient — best value-per-dollar on this lot</td></tr>
+    <tr><td>Contingency @ 10–15%</td><td class="n">$73,000</td><td class="n">$180,000</td><td>Sloped-lot projects warrant the upper end</td></tr>
+    <tr class="hi"><td><b>TOTAL ALL-IN (incl. land)</b></td><td class="n"><b>≈ $798,000</b></td><td class="n"><b>≈ $1,385,000</b></td><td>Planning-level range</td></tr>
+  </table>
+  <div class="box bad">
+    <h4>The finding that matters most financially</h4>
+    <p>Recorded sales in Waterpointe run at about <b>$120 per square foot</b>, and the highest county
+    appraisal on the whole street is <b>$856,900</b>. A 3,200 sq ft new build on this lot plausibly costs
+    <b>$798k–$1.39M all-in</b>. Even at the low end that is at or above the top of the local market, and
+    the mid-case exceeds every appraised home on Edgewater Drive.</p>
+    <p>In plain terms: <b>building here is very likely to cost more than the finished house would be
+    worth on resale.</b> That does not make it a bad decision — it is a perfectly rational one for an
+    owner-occupier who wants a specific house, a protected water view and a 265-day growing season, and
+    who intends to stay. But it is a <b>poor arbitrage</b>, and anyone underwriting this as a
+    build-to-sell or build-to-rent play should see the gap clearly before committing. The steep-lot site
+    premium and the unverified septic/watershed constraints both push in the same direction.</p>
+  </div>
+  <div class="pfoot"><span>K · Construction feasibility &amp; cost</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 15 : CLIMATE / HAZARDS / DEMOGRAPHICS ============ -->
+<section class="sheet dense" id="s-l" data-nav="L · Climate, hazards &amp; community">
+  <div class="phead"><span class="t">L · CLIMATE, NATURAL HAZARDS &amp; COMMUNITY</span><span class="s">Items 46–48</span></div>
+
+  <h2>46 · Climate <span class="b b-gis">Reanalysis-derived</span></h2>
+  <p>Computed for this coordinate from a <b>30-year daily record (1994–2023)</b> of ERA5 reanalysis, in °C
+  as requested. These are modelled gridded values for the site, not a weather-station record.</p>
+  <table>
+    <tr><th>Month</th><th class="n">Mean max °C</th><th class="n">Mean min °C</th><th class="n">Mean °C</th><th class="n">Precip mm</th></tr>
+    {{CLIMATE_ROWS}}
+  </table>
+  <div class="grid3" style="margin:2mm 0">
+    <div class="stat"><div class="v">17.2 °C</div><div class="l">annual mean temperature</div></div>
+    <div class="stat"><div class="v">1,196 mm</div><div class="l">annual rainfall (47.1 in)</div></div>
+    <div class="stat"><div class="v">265 days</div><div class="l">mean frost-free growing season</div></div>
+  </div>
+  <table class="kv">
+    <tr><td>Summer highs</td><td>July mean max <b>31.0 °C</b>; August <b>30.7 °C</b></td></tr>
+    <tr><td>Winter lows</td><td>January mean min <b>2.4 °C</b>; December <b>4.2 °C</b></td></tr>
+    <tr><td>Extremes in the 30-year record</td><td>record high <b>40.3 °C</b> · record low <b>−12.9 °C</b></td></tr>
+    <tr><td>Rainfall distribution</td><td>Remarkably even — wettest month Jul (117 mm), driest Oct (75 mm). No dry season; design for year-round runoff.</td></tr>
+    <tr><td>Humidity</td><td>Humid subtropical (Köppen <i>Cfa</i>); summer humidity persistently high. <span class="b b-gap">Not quantified</span></td></tr>
+    <tr><td>USDA hardiness zone</td><td><b>8a</b></td></tr>
+  </table>
+  <p><small>A 265-day frost-free season with evenly distributed rainfall is genuinely excellent for
+  the gardening ambitions in item 18 — arguably the lot's most reliable asset after the view.</small></p>
+
+  <h2>47 · Natural hazards</h2>
+  <table>
+    <tr><th>Hazard</th><th>Assessment</th><th>Basis</th></tr>
+    <tr><td><b>Flood</b></td><td><b>Low</b></td><td>FEMA Zone X, no SFHA, no BFE; lot low point ~10 ft above normal pool <span class="b b-off">Official</span></td></tr>
+    <tr><td><b>Tornado / severe storms</b></td><td><b>Moderate — principal hazard</b></td><td>Spring and late-autumn severe convective outbreaks are normal for north-central Georgia. Build to current wind provisions; this lot's daylight basement provides a natural refuge. <span class="b b-gap">Not quantified</span></td></tr>
+    <tr><td>Hurricane / tropical wind</td><td><b>Low–moderate</b></td><td>~400 km inland; exposure is to weakening remnants bringing heavy rain, not damaging wind</td></tr>
+    <tr><td>Hail, lightning</td><td><b>Moderate</b></td><td>Typical of the regional convective-storm climate</td></tr>
+    <tr><td>Wildfire</td><td><b>Low–moderate</b></td><td><b>Wooded</b> lot — maintain defensible space; humid climate limits landscape-scale fire risk</td></tr>
+    <tr><td>Drought</td><td><b>Low–moderate</b></td><td>Recurrent multi-year droughts also lower <b>reservoir levels</b>, affecting the view and lake access</td></tr>
+    <tr><td>Extreme heat</td><td><b>Moderate and rising</b></td><td>Record 40.3 °C; summer means near 31 °C. Specify shading, insulation and HVAC accordingly</td></tr>
+    <tr><td><b>Sinkhole / subsidence</b></td><td><b>Low</b></td><td>Crystalline Piedmont bedrock, not karst (item 42) <span class="b b-gis">GIS-derived</span></td></tr>
+    <tr><td><b>Erosion</b></td><td><b>Elevated — site-specific</b></td><td>18% slope in an "eroded"-phase soil draining to a public reservoir. The most probable <em>construction-phase</em> hazard on this property.</td></tr>
+  </table>
+
+  <h2>48 · Community &amp; demographics <span class="b b-gap">Unverified</span></h2>
+  <div class="box">
+    <p>I was unable to retrieve American Community Survey figures: the U.S. Census API now requires a
+    registered key, and I will not publish population, income or ethnicity statistics I did not actually
+    obtain. What is verified is the geography — <b>Clayton County, Census Tract 406.36, Block 1000</b>
+    (GEOID <code>130630406361000</code>). Pull these exact tables for the tract and county at
+    <code>data.census.gov</code>:</p>
+    <table>
+      <tr><th>Topic requested</th><th>ACS table</th></tr>
+      <tr><td>Total population</td><td><code>B01003</code></td></tr>
+      <tr><td>Median household income</td><td><code>B19013</code></td></tr>
+      <tr><td>Median age / age distribution</td><td><code>B01002</code> / <code>S0101</code></td></tr>
+      <tr><td>Household composition</td><td><code>B11001</code></td></tr>
+      <tr><td>Race &amp; ethnicity</td><td><code>B02001</code> / <code>B03003</code></td></tr>
+      <tr><td><b>Asian Indian population</b> (requested specifically)</td><td><code>B02015</code> — "Asian alone by selected groups"</td></tr>
+      <tr><td>Population growth</td><td>Compare <code>B01003</code> across ACS vintages, or Census 2010 → 2020</td></tr>
+    </table>
+    <p>Qualitatively and verifiably: this is a <b>built-out, owner-occupied, single-family</b> enclave
+    (homes from 1988 to 2025, 60+ on Edgewater Drive alone) inside the Atlanta metropolitan CSA, with an
+    active HOA and Neighborhood Watch. Those are structural facts from the parcel and HOA records, not
+    demographic inferences.</p>
+  </div>
+  <div class="pfoot"><span>L · Climate, natural hazards &amp; community</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 16 : LOCATION / SERVICES ============ -->
+<section class="sheet" id="s-l2" data-nav="L · Schools, services &amp; access">
+  <div class="phead"><span class="t">L · SCHOOLS, HEALTHCARE, SERVICES &amp; ACCESS</span><span class="s">Items 49–55</span></div>
+  <p><small>All distances below are <b>straight-line</b> from the parcel centroid, computed from
+  OpenStreetMap coordinates. Driving distances will be longer — typically 20–40% more in this road
+  network. <span class="b b-gis">GIS-derived</span></small></p>
+
+  <h2>49 · Schools <span class="b b-gis">GIS-derived</span> <span class="b b-gap">Zoning unverified</span></h2>
+  <div class="box warn"><p>Because the parcel is in <b>Clayton County</b>, it is served by
+  <b>Clayton County Public Schools</b> — <em>not</em> Henry County Schools. Buyers who believe they are
+  purchasing in Hampton/Henry County frequently get this wrong, and the two districts differ
+  significantly in performance and reputation. <b>Attendance zones must be confirmed directly with
+  CCPS</b>; proximity does not determine assignment. School ratings were not retrieved.</p></div>
+  <table>
+    <tr><th>School</th><th class="n">Distance</th><th>Note</th></tr>
+    <tr><td>Rivers Edge Elementary School</td><td class="n">1.17 mi</td><td>Nearest elementary — walkably close by distance, though not by terrain or footway</td></tr>
+    <tr><td>Lovejoy Middle School</td><td class="n">2.50 mi</td><td>Nearest middle school</td></tr>
+    <tr><td>Mundy's Mill High School</td><td class="n">5.28 mi</td><td>Nearest public high school</td></tr>
+    <tr><td>Mundys Mill Junior High</td><td class="n">5.02 mi</td><td></td></tr>
+    <tr><td>Hampton Elementary School</td><td class="n">5.08 mi</td><td></td></tr>
+    <tr><td>Grace Christian Academy</td><td class="n">3.33 mi</td><td><b>Private</b> option</td></tr>
+    <tr><td>Rising Star Montessori Academy</td><td class="n">5.00 mi</td><td><b>Private</b> option</td></tr>
+  </table>
+
+  <h2>50 · Healthcare</h2>
+  <table>
+    <tr><th>Facility</th><th class="n">Distance</th><th>Type</th></tr>
+    <tr><td><b>Piedmont Fayette Hospital</b></td><td class="n">8.36 mi</td><td>Nearest full-service hospital with emergency department</td></tr>
+    <tr><td>Kaiser Permanente Medical Center</td><td class="n">10.34 mi</td><td>Medical centre</td></tr>
+    <tr><td>Piedmont Henry Hospital</td><td class="n">10.53 mi</td><td>Major hospital, ED</td></tr>
+    <tr><td>Southern Regional Medical Center</td><td class="n">11.36 mi</td><td>Major hospital, ED</td></tr>
+    <tr><td>Rehabilitation Hospital of Henry</td><td class="n">10.19 mi</td><td>Rehabilitation</td></tr>
+    <tr><td>WellStar Spalding Regional</td><td class="n">13.60 mi</td><td>Hospital</td></tr>
+  </table>
+  <div class="box good"><p><b>Emergency response is a standout strength.</b>
+  <b>Clayton County Fire Station 10 sits 0.19 mi (about 310 m) from the lot</b> — confirmed twice, from
+  OpenStreetMap and independently from the county parcel record (12554 Panhandle Rd, 652 ft away).
+  Very short response times, and a proximity that often improves fire-insurance rating. The trade-off
+  worth checking on a site visit is occasional siren noise.</p></div>
+
+  <!--SPLIT|s-l3|L · Shopping, community &amp; access|L · SHOPPING, COMMUNITY &amp; ACCESS|Items 51–55-->
+  <h2>51 · Shopping &amp; services</h2>
+  <div class="grid2">
+    <div><table>
+      <tr><th>Grocery</th><th class="n">mi</th></tr>
+      <tr><td>Eden Fresh</td><td class="n">1.92</td></tr>
+      <tr><td>Walmart Supercenter</td><td class="n">3.13</td></tr>
+      <tr><td>Aldi</td><td class="n">3.24</td></tr>
+      <tr><td>Food Depot</td><td class="n">3.37</td></tr>
+      <tr><td>Kroger</td><td class="n">4.28</td></tr>
+      <tr><td>Ingles</td><td class="n">5.00</td></tr>
+      <tr><td>Publix</td><td class="n">5.00</td></tr>
+    </table></div>
+    <div><table>
+      <tr><th>Other services</th><th class="n">mi</th></tr>
+      <tr><td>Walmart Pharmacy</td><td class="n">3.16</td></tr>
+      <tr><td>Citgo / BP fuel</td><td class="n">3.36</td></tr>
+      <tr><td>Walgreens</td><td class="n">5.12</td></tr>
+      <tr><td>CVS Pharmacy</td><td class="n">5.67</td></tr>
+      <tr><td>Banks</td><td><span class="b b-gap">n/v</span></td></tr>
+      <tr><td>Hardware / home improvement</td><td><span class="b b-gap">n/v</span></td></tr>
+    </table></div>
+  </div>
+  <p>Day-to-day shopping is well covered within about 3–5 miles, anchored by the Walmart Supercenter
+  cluster. Banks and hardware/home-improvement stores were not separately enumerated.</p>
+
+  <h2>52 · Indian / South Asian community <span class="b b-gis">GIS-derived</span></h2>
+  <table>
+    <tr><th>Amenity</th><th class="n">Distance</th><th>Note</th></tr>
+    <tr><td><b>The Hindu Temple of Atlanta</b> (incl. Balaji &amp; Shiva temples)</td><td class="n">12.58 mi</td><td>The major temple complex serving metro Atlanta, in Riverdale — <b>same county</b></td></tr>
+    <tr><td>Ambaji USA – Shree Shakti Mandir</td><td class="n">12.81 mi</td><td></td></tr>
+    <tr><td>Bombay Bites</td><td class="n">9.23 mi</td><td>Nearest Indian restaurant</td></tr>
+    <tr><td>Masala Cottage</td><td class="n">11.86 mi</td><td></td></tr>
+    <tr><td>Singh's Cafe</td><td class="n">12.72 mi</td><td></td></tr>
+    <tr><td>Krishna Life Temple &amp; Monastery</td><td class="n">20.25 mi</td><td></td></tr>
+    <tr><td>BAPS Shri Swaminarayan Mandir Atlanta</td><td class="n">34.55 mi</td><td>In Lilburn, NE metro</td></tr>
+    <tr><td><b>Cherians International Groceries</b></td><td class="n">26.99 mi</td><td><b>Nearest large dedicated Indian grocery</b> — the main practical gap</td></tr>
+  </table>
+  <p>Worship and restaurants are reachable at roughly 9–13 miles, which is convenient. <b>Full-range
+  Indian grocery shopping is not</b>: the nearest large store is ~27 miles, so expect a planned trip
+  rather than a casual one. Metro Atlanta's principal South Asian concentration lies along the
+  <b>north-eastern</b> corridor (Gwinnett — Lilburn, Norcross, Duluth), on the far side of the city from
+  this lot. Mosques and South Asian community organisations were not separately enumerated.
+  <span class="b b-gap">Partially unverified</span></p>
+
+  <h2>53–54 · Entertainment, nightlife &amp; walkability <span class="b b-gap">Unverified</span></h2>
+  <p>Walk Score, Bike Score and Transit Score were not retrieved. A practical assessment can nonetheless
+  be made with confidence from the verified geography: this is a <b>car-dependent</b> location.
+  The lot sits on a cul-de-sac-pattern residential street of 1–2 acre wooded lots, with the nearest
+  grocery ~1.9 mi away across a 419 ft-deep, 18%-grade property and no evidenced footways. There is no
+  walkable retail, no meaningful transit, and no nightlife district nearby; Atlanta's restaurant,
+  cinema and nightlife concentrations are 15–25 miles north. <b>Assume every daily errand requires a
+  car.</b> For balance, this is exactly the trade-off that delivers the privacy, the woodland and the
+  reservoir view.</p>
+
+  <h2>55 · Airport <span class="b b-gis">GIS-derived</span></h2>
+  <table class="kv">
+    <tr><td>Nearest international airport</td><td><b>Hartsfield-Jackson Atlanta International (ATL)</b></td></tr>
+    <tr><td>Straight-line distance</td><td><b>15.9 mi</b> (25.5 km)</td></tr>
+    <tr><td>Typical driving time</td><td>Roughly <b>25–40 minutes</b> depending on traffic, via I-75 / SR-85 <span class="b b-gap">not measured</span></td></tr>
+    <tr><td>Significance</td><td>ATL is among the world's busiest airports, offering non-stop service to most major domestic and many international destinations — including direct service to India from Atlanta</td></tr>
+  </table>
+  <div class="box good"><p><b>Genuine locational strength.</b> Very few semi-rural, wooded,
+  water-adjacent acre-plus lots sit 16 miles from a global hub airport. For frequent flyers — and for
+  anyone travelling regularly to South Asia — this is a material and durable advantage, and it also
+  underpins the neighbourhood's value (a neighbouring listing markets "exceptional access to
+  Hartsfield-Jackson and I-75").</p></div>
+  <div class="pfoot"><span>L · Schools, healthcare, services &amp; access</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 17 : STRENGTHS / RISKS ============ -->
+<section class="sheet" id="s-m" data-nav="M · Strengths &amp; limitations">
+  <div class="phead"><span class="t">M · PROPERTY STRENGTHS &amp; LIMITATIONS</span><span class="s">Items 56–57</span></div>
+
+  <h2>56 · Documented strengths</h2>
+  <table>
+    <tr><th>Strength</th><th>Evidence</th><th>Confidence</th></tr>
+    <tr><td><b>No mapped flood risk</b></td><td>FEMA Zone X, outside SFHA, no BFE; lot low point ~10 ft above reservoir pool</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td><b>Permanently protected rear outlook</b></td><td>Adjoins a $5.48M CCWA water-supply parcel that will never be developed — the view behind the lot is structurally safe</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td><b>Elevated water view</b></td><td>90 ft of elevation above the reservoir across a 419 ft depth</td><td><span class="b b-gis">GIS-derived</span></td></tr>
+    <tr><td><b>Generous, private lot</b></td><td>1.3313 ac; 3× a presumed 18,000 sq ft zoning minimum; wooded; 1–2 ac neighbours</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td><b>Favourable soil for foundations</b></td><td>Well drained, no water table in profile, <b>low</b> shrink–swell (LEP 1.5)</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td><b>Terrain suits a daylight basement</b></td><td>80 ft of fall converts the slope into finished lower-level space and view</td><td><span class="b b-gis">GIS-derived</span></td></tr>
+    <tr><td><b>Fire station 0.19 mi away</b></td><td>Clayton County Station 10 — confirmed from two independent sources</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td><b>Hartsfield-Jackson 15.9 mi</b></td><td>Global hub access from a semi-rural setting</td><td><span class="b b-gis">GIS-derived</span></td></tr>
+    <tr><td><b>Excellent growing climate</b></td><td>265 frost-free days, 1,196 mm evenly distributed rain, zone 8a</td><td><span class="b b-gis">Reanalysis</span></td></tr>
+    <tr><td><b>Established, built-out neighbourhood</b></td><td>Homes 1988–2025 appraising $296k–$857k; pool, tennis, clubhouse; 99% of ask achieved, 34 days on market</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td><b>Sinkhole risk negligible</b></td><td>Crystalline Piedmont geology, not karst</td><td><span class="b b-gis">GIS-derived</span></td></tr>
+    <tr><td><b>Price is negotiable</b></td><td>$125k ask vs $60k county appraisal; four comparable vacant lots unsold nearby</td><td><span class="b b-off">Official</span></td></tr>
+  </table>
+
+  <h2>57 · Limitations &amp; risks</h2>
+  <table>
+    <tr><th>Risk</th><th>Severity</th><th>Detail</th></tr>
+    <tr class="hi"><td><b>Not truly lakefront</b></td><td><b>High</b></td><td>Parcel contains no water; 59–80 ft of CCWA land intervenes; no apparent riparian rights. Directly contradicts the marketing.</td></tr>
+    <tr class="hi"><td><b>Dock almost certainly impossible</b></td><td><b>High</b></td><td>Would occupy a public drinking-water utility's land and water</td></tr>
+    <tr class="hi"><td><b>Restricted lake use</b></td><td><b>High</b></td><td>Permit-only; <b>closed Nov–Feb</b>; no swimming/wading; no motorised boating; access at CCWA's designated points, not from the lot</td></tr>
+    <tr class="hi"><td><b>Build cost likely exceeds resale value</b></td><td><b>High</b></td><td>$798k–$1.39M estimated all-in vs a $120/sq ft market and an $857k top appraisal on the street</td></tr>
+    <tr class="hi"><td><b>STR moratorium in force</b></td><td><b>High</b> (if STR is the thesis)</td><td>Clayton Co. Res. 2026-153, through 31 Dec 2026, with the governing definitions themselves under revision</td></tr>
+    <tr><td><b>18.3% average slope; 23.5% over 50 ft</b></td><td><b>Moderate–high</b></td><td>No level building pad; cut/fill, retaining and driveway benching required; steepest band sits where the house would go</td></tr>
+    <tr><td><b>Septic constraints unresolved</b></td><td><b>Moderate–high</b></td><td>Clay B horizon, bedrock at ~50 in, 18% slope, and probable health-department setbacks from a public water supply. <b>Bedroom count is unproven.</b></td></tr>
+    <tr><td><b>Possible water-supply watershed overlay</b></td><td><b>Moderate–high</b></td><td>Georgia Part 5 criteria may impose buffers and impervious caps — undetermined, and could shrink the buildable envelope</td></tr>
+    <tr><td><b>Development moratorium wording</b></td><td><b>Moderate</b></td><td>Res. 2026-120 — needs a written determination that a single lot build is exempt</td></tr>
+    <tr><td><b>Zoning standards unknown</b></td><td><b>Moderate</b></td><td>RS180 setbacks unverified; on a 148 ft-wide lot the side setbacks determine the house width</td></tr>
+    <tr><td><b>Covenants unread</b></td><td><b>Moderate</b></td><td>Could independently restrict size, materials, outbuildings, poultry, STR — and may impose a build-by deadline</td></tr>
+    <tr><td><b>Utilities unconfirmed</b></td><td><b>Moderate</b></td><td>Water, sewer, power, gas and broadband all require written availability confirmation</td></tr>
+    <tr><td><b>Rock excavation risk</b></td><td><b>Moderate</b></td><td>Paralithic bedrock at ~50 in against a basement/driveway cut of 6–10 ft</td></tr>
+    <tr><td><b>Construction-phase erosion</b></td><td><b>Moderate</b></td><td>Eroded-phase soil, 18% grade, discharging toward a public reservoir — expect strict E&amp;S enforcement</td></tr>
+    <tr><td>Thin, acidic, low-organic topsoil</td><td><b>Low</b></td><td>pH 5.8, 2% OM over 5 in; amendable with lime, compost and imported topsoil</td></tr>
+    <tr><td>Car-dependent; schools are Clayton County</td><td><b>Low–moderate</b></td><td>No walkable amenities; district differs from buyer expectations set by the Hampton address</td></tr>
+    <tr><td>Hobby farming probably prohibited</td><td><b>Low</b></td><td>Typical for a covenanted swim/tennis community; unverified</td></tr>
+  </table>
+  <div class="pfoot"><span>M · Property strengths &amp; limitations</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 18 : MISSING DOCS + FEASIBILITY ============ -->
+<section class="sheet" id="s-m2" data-nav="M · Missing docs &amp; feasibility">
+  <div class="phead"><span class="t">M · MISSING DOCUMENTATION &amp; FINAL FEASIBILITY</span><span class="s">Items 58–59</span></div>
+
+  <h2>58 · Documents to obtain before purchase</h2>
+  <p>Ordered by how much they could change the decision. Tick them off as they arrive.</p>
+  <h4>Tier 1 — deal-determining; get these before removing contingencies</h4>
+  <div class="ck"><input type="checkbox"><div><b>Recorded plat</b> (Clayton Co. Clerk of Superior Court) — easements, platted setbacks, any reservoir buffer. <em>The highest-value missing document.</em></div></div>
+  <div class="ck"><input type="checkbox"><div><b>Level 3 soil evaluation / perc test</b> (Clayton Co. Board of Health) — determines the <b>permitted bedroom count</b>. Do not assume 4 bedrooms.</div></div>
+  <div class="ck"><input type="checkbox"><div><b>HOA declaration, CC&amp;Rs, amendments and architectural guidelines</b> (Waterpointe Community Association) — minimum house size, STR, outbuildings, poultry, build-by deadline</div></div>
+  <div class="ck"><input type="checkbox"><div><b>Written CCWA determination</b> on shoreline access, any dock or structure on CCWA land, and lake-use rights attaching to Lot 23</div></div>
+  <div class="ck"><input type="checkbox"><div><b>Zoning verification letter</b> for parcel <code>05050A A003</code> — RS180 setbacks, coverage, height, ADU/second dwelling, <b>and whether a water-supply watershed overlay applies</b></div></div>
+  <div class="ck"><input type="checkbox"><div><b>Written confirmation that Res. 2026-120 does not bar</b> a single-family permit on this existing platted lot</div></div>
+  <div class="ck"><input type="checkbox"><div><b>Utility availability letters</b> — CCWA (water <em>and</em> sewer), electricity provider, gas; FCC broadband check</div></div>
+  <h4>Tier 2 — design and cost certainty</h4>
+  <div class="ck"><input type="checkbox"><div><b>Boundary + topographic survey</b> by a Georgia-licensed surveyor (replaces every GIS estimate in this report)</div></div>
+  <div class="ck"><input type="checkbox"><div><b>Geotechnical report with test borings</b> — bearing capacity, slope stability, <b>depth to rock</b></div></div>
+  <div class="ck"><input type="checkbox"><div><b>Two or three builder bids</b> on an identical sloped-lot scope, to replace the planning-level estimate in item 43</div></div>
+  <div class="ck"><input type="checkbox"><div><b>HOA financials</b> — budget, reserve study, three years of minutes, any special assessments; confirm the actual dues</div></div>
+  <div class="ck"><input type="checkbox"><div><b>Title commitment</b> with full easement and restriction schedule; confirm legal description and access</div></div>
+  <div class="ck"><input type="checkbox"><div><b>Tax certificate</b> — current Clayton County millage and any outstanding amounts</div></div>
+  <h4>Tier 3 — useful</h4>
+  <div class="ck"><input type="checkbox"><div>Clayton County <b>governing FEMA panel</b> confirmation (resolves the 13063C / 13151C ambiguity)</div></div>
+  <div class="ck"><input type="checkbox"><div>CCWA <b>reservoir operating levels</b> and seasonal drawdown range</div></div>
+  <div class="ck"><input type="checkbox"><div>CCPS <b>school attendance zone</b> confirmation</div></div>
+  <div class="ck"><input type="checkbox"><div>UGA Extension <b>soil test</b> for the garden areas; <b>radon test</b> after construction</div></div>
+
+  <h2>59 · Final construction feasibility</h2>
+  <table>
+    <tr><th>Can the lot accommodate…</th><th>Verdict</th><th>Qualification</th></tr>
+    <tr><td><b>A main house</b></td><td><b>YES</b></td><td>With significant grading, a stepped or daylight-basement foundation and retaining. Width limited by unverified side setbacks.</td></tr>
+    <tr><td><b>A second in-law suite</b></td><td><b>CONDITIONAL</b></td><td>Physically well suited as an <em>integrated</em> lower-level suite. A <em>separate</em> dwelling unit depends on zoning, covenants and — probably decisively — septic capacity.</td></tr>
+    <tr><td><b>Garage</b></td><td><b>YES</b></td><td>Driveway must be benched down from a 23.5% natural grade</td></tr>
+    <tr><td><b>Septic system</b></td><td><b>PROBABLE, unproven</b></td><td>Area is ample; soil, 50-in bedrock, slope and reservoir setbacks govern. <b>Perc test required.</b></td></tr>
+    <tr><td><b>Garden</b></td><td><b>YES — well suited</b></td><td>265-day season; use terraced raised beds, lime and compost. Blueberries, figs, muscadines and okra will thrive.</td></tr>
+    <tr><td><b>Hobby farming / poultry</b></td><td><b>PROBABLY NOT</b></td><td>Expect covenant prohibition; also sensitive upslope of a drinking-water reservoir</td></tr>
+    <tr class="hi"><td><b>Dock</b></td><td><b>NO (assume not)</b></td><td>Would sit on CCWA public water-supply land and water</td></tr>
+    <tr class="hi"><td><b>Boat access from the property</b></td><td><b>NO</b></td><td>No water frontage. Non-motorised use only, by CCWA permit, at CCWA access points, Mar–Oct</td></tr>
+    <tr class="hi"><td><b>Short-term rental</b></td><td><b>NO at present</b></td><td>County moratorium through 31 Dec 2026; HOA position unverified</td></tr>
+    <tr><td><b>Pool / outdoor recreation</b></td><td><b>CONDITIONAL</b></td><td>Needs a second engineered bench and retaining; check impervious caps</td></tr>
+  </table>
+  <div class="box">
+    <h4>Overall judgement</h4>
+    <p>This is a <b>buildable lot with a protected view in an established community</b> — and it is
+    <b>not</b> the lakefront recreational property the listing implies. Those two statements are both
+    true, and the gap between them is the whole point of this exercise.</p>
+    <p>It suits a buyer who wants a custom home with a permanent wooded water <em>outlook</em>, values
+    a 16-mile airport run and a 0.19-mile fire station, intends to garden, and will <b>hold the house
+    rather than flip it</b>. It does not suit a buyer who wants a dock, a boat, swimming, an STR income
+    stream, a chicken run, or a cost-effective build-to-value equation.</p>
+    <p>Two tests should govern the purchase decision, and both can be done cheaply before committing:
+    the <b>perc test</b> (does the bedroom programme even fit?) and the <b>recorded plat plus zoning
+    letter</b> (how much of this lot can you actually build on?). The $125,000 ask against a $60,000
+    county appraisal, with four comparable lots sitting unsold nearby, suggests the price should carry
+    the risk that these unknowns represent — not the buyer.</p>
+  </div>
+  <div class="pfoot"><span>M · Missing documentation &amp; final feasibility</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 19 : KEY MEASUREMENTS ============ -->
+<section class="sheet" id="s-m3" data-nav="M · Key measurements summary">
+  <div class="phead"><span class="t">M · KEY MEASUREMENTS SUMMARY</span><span class="s">Item 60</span></div>
+  <table>
+    <tr><th style="width:34%">Parameter</th><th>Finding</th><th style="width:16%">Evidence</th></tr>
+    <tr><td>Lot size</td><td><b>57,993 sq ft = 1.3313 acres</b></td><td><span class="b b-gis">GIS</span></td></tr>
+    <tr><td>Lot dimensions</td><td>≈ <b>148 ft wide × 419 ft deep</b>; frontage ≈ 130 ft; perimeter 1,112.6 ft</td><td><span class="b b-gis">GIS</span></td></tr>
+    <tr><td>Lowest elevation</td><td><b>811.0 ft</b> NAVD88 (rear/lake end)</td><td><span class="b b-gis">Lidar</span></td></tr>
+    <tr><td>Highest elevation</td><td><b>891.2 ft</b> (road frontage)</td><td><span class="b b-gis">Lidar</span></td></tr>
+    <tr><td>Elevation difference</td><td><b>80.2 ft</b> total relief (75.1 ft along the centreline)</td><td><span class="b b-gis">Lidar</span></td></tr>
+    <tr><td>Average slope</td><td><b>18.3% (10.37°)</b></td><td><span class="b b-gis">Lidar</span></td></tr>
+    <tr><td>Maximum slope (any 50 ft)</td><td><b>23.5% (13.25°)</b>, 60–110 ft from the road</td><td><span class="b b-gis">Lidar</span></td></tr>
+    <tr><td>Rising angle at the lake end</td><td>18.5% (10.47°) over the final 50 ft; 18.4% (10.42°) shoreline → high point</td><td><span class="b b-gis">Lidar</span></td></tr>
+    <tr><td>FEMA zone</td><td><b>Zone X</b> — area of minimal flood hazard; outside SFHA</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>BFE</td><td><b>None published</b> (not applicable in Zone X)</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Minimum finished-floor elevation</td><td><b>No FEMA-driven requirement.</b> Set by grading/drainage design; confirm any local rule</td><td><span class="b b-pro">Pro</span></td></tr>
+    <tr><td>Fill required?</td><td><b>Not for flood.</b> Cut-and-fill required for buildability; balanced on-site cut/fill likely avoids import</td><td><span class="b b-gis">GIS</span></td></tr>
+    <tr><td>Reservoir normal pool</td><td><b>801.1 ft</b>; lot low point <b>+9.9 ft</b> above it</td><td><span class="b b-gis">Lidar</span></td></tr>
+    <tr><td>Distance to water's edge</td><td><b>59–80 ft beyond the rear boundary</b>, across CCWA land</td><td><span class="b b-gis">GIS</span></td></tr>
+    <tr><td>Sewer</td><td><b>Unconfirmed — assume septic</b></td><td><span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Water</td><td>CCWA public water <b>likely</b> at the road — unconfirmed</td><td><span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Electricity / Gas / Internet</td><td>All <b>unconfirmed</b>; propane and satellite are fallbacks</td><td><span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Septic required?</td><td><b>Probably yes</b> — drives bedroom count</td><td><span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Permitted bedrooms on septic</td><td><b>3–4 expected</b> (area allows more; soil, 50-in bedrock, slope and reservoir setbacks constrain). <b>Unproven.</b></td><td><span class="b b-pro">Pro</span></td></tr>
+    <tr><td>Soil</td><td><b>Gwinnett sandy clay loam, 10–25% slopes, eroded</b> (GwE2). Well drained; HSG B; pH 5.8; clay 30%→47.5%; <b>low</b> shrink–swell; bedrock 50 in</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Ideal well depth (if needed)</td><td>Regional norm <b>150–400 ft</b> into fractured bedrock; avoid shallow wells here</td><td><span class="b b-gap">Regional</span></td></tr>
+    <tr><td>HOA</td><td><b>Waterpointe Community Association</b> — pool, tennis, clubhouse; covenants across 4 phases</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>HOA fee</td><td>Reported <b>$13–$39/month</b> ($156–$468/yr) — <b>verify</b></td><td><span class="b b-gap">Low conf.</span></td></tr>
+    <tr><td>Zoning</td><td><b>RS180</b> single-family; setbacks and coverage <b>unverified</b>; possible watershed overlay</td><td><span class="b b-off">Official</span> <span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Dock possible?</td><td><b>Assume NO</b> — CCWA public water-supply land and water</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Lake</td><td><b>J.W. Smith Reservoir</b>, ~250 acres, Clayton County Water Authority drinking-water supply</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Lake depth</td><td><b>Not available</b> — no public bathymetry</td><td><span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Boating</td><td>Non-motorised only, by CCWA permit ($5/$25/$40); <b>closed Nov–Feb</b>; Mar–Oct Mon–Wed &amp; Sat–Sun 7am–7pm; <b>no swimming or wading</b></td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Fishing</td><td>Permitted under CCWA permit + Georgia licence, in season; <b>not from the property</b>. Species/limits not retrieved</td><td><span class="b b-off">Official</span> <span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Hobby farming</td><td><b>Probably prohibited</b> by covenant — verify</td><td><span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Second in-law suite</td><td><b>Conditional</b> — integrated lower-level suite plausible; separate unit doubtful</td><td><span class="b b-gap">Gap</span></td></tr>
+    <tr><td>Short-term rental</td><td><b>Not permitted at present</b> — Clayton Co. Res. 2026-153 through 31 Dec 2026</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Nearest hospital</td><td><b>Piedmont Fayette Hospital, 8.36 mi</b> (straight line)</td><td><span class="b b-gis">GIS</span></td></tr>
+    <tr><td>Nearest fire station</td><td><b>Clayton County Station 10 — 0.19 mi</b></td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Nearest international airport</td><td><b>Hartsfield-Jackson (ATL), 15.9 mi</b> straight line</td><td><span class="b b-gis">GIS</span></td></tr>
+    <tr><td>Schools</td><td><b>Clayton County Public Schools</b>: Rivers Edge Elem. 1.17 mi · Lovejoy Middle 2.50 mi · Mundy's Mill HS 5.28 mi. Zones unconfirmed</td><td><span class="b b-gis">GIS</span></td></tr>
+    <tr><td>Climate</td><td>Mean <b>17.2 °C</b>; Jul max <b>31.0 °C</b>; Jan min <b>2.4 °C</b>; <b>1,196 mm</b>/yr; <b>265</b> frost-free days; zone 8a</td><td><span class="b b-gis">Reanalysis</span></td></tr>
+    <tr><td>County</td><td><b>Clayton County</b> (FIPS 13063) — not Henry County</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Parcel / owner / zoning</td><td><code>05050A A003</code> · MCKNIGHT DESMOND (deed 2021) · RS180 · appraised <b>$60,000</b></td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Asking price</td><td><b>$125,000</b> (108% above county appraisal)</td><td><span class="b b-off">Official</span></td></tr>
+    <tr><td>Estimated all-in build cost (3,200 sq ft, 4 bed)</td><td><b>≈ $798,000 – $1,385,000</b> — planning-level; likely <b>above</b> local resale value</td><td><span class="b b-pro">Estimate</span></td></tr>
+  </table>
+  <div class="pfoot"><span>M · Key measurements summary</span><span>{{PAGENO}}</span></div>
+</section>
+
+<!-- ============ SHEET 20 : DELIVERABLES + SOURCES ============ -->
+<section class="sheet" id="s-src" data-nav="Deliverables, sources &amp; method">
+  <div class="phead"><span class="t">VISUAL DELIVERABLES, SOURCES &amp; METHODOLOGY</span><span class="s">Item 61 + provenance</span></div>
+
+  <h2>61 · Visual deliverables — delivered vs not</h2>
+  <table>
+    <tr><th>Requested visual</th><th>Status</th><th>Note</th></tr>
+    <tr><td>True-scale boundary + contour map</td><td><b>DELIVERED</b> — Figure 1</td><td>5 ft contours, 1:1 scale, north arrow, scale bar, dimensions, corner coordinates, drainage</td></tr>
+    <tr><td>Road-to-lake elevation cross-section</td><td><b>DELIVERED</b> — Figure 2</td><td>Exaggerated <b>and</b> true 1:1, side by side, as specified</td></tr>
+    <tr><td>3D terrain map</td><td><b>DELIVERED</b> — Figure 3</td><td>Lidar surface with boundary and reservoir</td></tr>
+    <tr><td>Building-envelope diagram</td><td><b>NOT DELIVERED</b></td><td>Cannot be drawn honestly: RS180 setbacks are unverified and any platted easements are unknown. Drawing an envelope from guessed setbacks would be the most misleading thing in this report. Produce it once the zoning letter and plat are in hand.</td></tr>
+    <tr><td>Official plat map</td><td><b>NOT OBTAINED</b></td><td>Clerk of Superior Court — see item 58, Tier 1</td></tr>
+    <tr><td>Esri / GIS parcel map</td><td><b>DATA obtained</b></td><td>Parcel geometry and attributes queried live and used throughout; county's own cartographic output not reproduced</td></tr>
+    <tr><td>FEMA flood map panel</td><td><b>DATA obtained</b>, image not reproduced</td><td>Zone X determination queried from the National Flood Hazard Layer; view the panel at <code>msc.fema.gov</code></td></tr>
+    <tr><td>Zillow hero / surrounding-area images</td><td><b>DELIBERATELY OMITTED</b></td><td>Copyrighted listing photography — not licensed for redistribution. Links provided in item 2.</td></tr>
+    <tr><td>Lake / bathymetric map</td><td><b>NOT AVAILABLE</b></td><td>No public bathymetry for J.W. Smith Reservoir</td></tr>
+    <tr><td>Location / access map</td><td><b>NOT DELIVERED</b></td><td>Distances tabulated instead (items 49–55); base-map tiles carry licence terms</td></tr>
+  </table>
+
+  <h2>Methodology</h2>
+  <p>All geometry was computed in <b>UTM Zone 16N / NAD83 (EPSG:26916)</b> to avoid the area and distance
+  distortion that arises from measuring in degrees. The parcel polygon was taken from the Clayton County
+  Tax Assessor ArcGIS service and reprojected; area, side lengths and bearings were computed from that
+  polygon. Elevations were sampled from the <b>USGS 3DEP</b> elevation service on a grid <b>aligned to the
+  lot's long axis</b> (10 ft spacing, 3,149 points, 583 inside the boundary), with an independent 1 m
+  centreline transect for the profile. Contours, slope statistics, drainage direction and the water plane
+  were derived from that grid. The reservoir surface was identified as the modal flat elevation
+  (244.17 m / 801.1 ft, 362 concordant samples). Climate was computed from a 30-year daily ERA5 record
+  for the coordinate. Soil came from USDA-NRCS Soil Data Access by polygon intersection. Distances to
+  amenities are straight-line (haversine) from the parcel centroid using OpenStreetMap coordinates.</p>
+  <h4>Cross-validation performed</h4>
+  <ul>
+    <li>GIS-computed area <b>1.3313 ac</b> vs listing <b>1.33 ac</b> — agree to 0.1%</li>
+    <li>Lidar average slope <b>18.3%</b> vs USDA-NRCS representative slope <b>18%</b> for the mapped soil unit — two unrelated datasets agree</li>
+    <li>USGS point-query elevation <b>895.9 ft</b> vs 3DEP grid <b>896.0 ft</b> at the same location — agree to 0.1 ft</li>
+    <li>County "#23" address suffix vs assessor <code>LOT 23</code> — confirmed</li>
+    <li>Fire-station proximity from OpenStreetMap (0.19 mi) vs county parcel record (652 ft) — agree</li>
+  </ul>
+
+  <h2>Sources</h2>
+  <table>
+    <tr><th>Source</th><th>Used for</th></tr>
+    <tr><td>Clayton County Tax Assessor GIS — <code>gis.claytoncountyga.gov/server/rest/services/TaxAssessor/Parcels</code></td><td>Parcel geometry, ID, zoning, lot number, owner, appraised values, adjoining ownership (incl. the CCWA parcel)</td></tr>
+    <tr><td>FEMA National Flood Hazard Layer — <code>hazards.fema.gov</code></td><td>Flood zone, SFHA status, BFE, DFIRM/panel</td></tr>
+    <tr><td>USGS 3DEP Elevation Service &amp; EPQS — <code>elevation.nationalmap.gov</code>, <code>epqs.nationalmap.gov</code></td><td>All elevation, contour, slope and cross-section data</td></tr>
+    <tr><td>USDA-NRCS Soil Data Access — <code>sdmdataaccess.sc.egov.usda.gov</code></td><td>Soil map unit, series, horizons, texture, pH, Ksat, shrink–swell, depth to bedrock</td></tr>
+    <tr><td>U.S. Census Bureau Geocoder</td><td>County/tract/block determination (the Clayton County finding)</td></tr>
+    <tr><td>Clayton County Board of Commissioners Resolutions <b>2026-153</b> and <b>2026-120</b>; Community &amp; Economic Development</td><td>STR moratorium and residential development moratorium</td></tr>
+    <tr><td>Clayton County Water Authority — <code>ccwa.us</code>; CCWA Permit Guidelines &amp; Schedule 2025-26</td><td>Reservoir identity, permit pricing, hours, seasonal closure, swimming prohibition</td></tr>
+    <tr><td>Waterpointe Community Association — <code>waterpointehoa.com</code></td><td>HOA existence, amenities, covenants, four phases, ~250-acre lake, Clayton County location</td></tr>
+    <tr><td>ECMWF ERA5 reanalysis via Open-Meteo archive</td><td>30-year climate normals in °C</td></tr>
+    <tr><td>OpenStreetMap contributors (ODbL)</td><td>Amenity, school, hospital, temple and fire-station locations</td></tr>
+    <tr><td>Public listing and MLS aggregation (Redfin, realtor.com, georgiamls, subdivision aggregators)</td><td>Asking price, listing history, subdivision sales statistics, HOA fee range (low confidence)</td></tr>
+  </table>
+
+  <div class="box bad" style="margin-top:4mm">
+    <h4>Scope and limitations — please read</h4>
+    <p>This report is a <b>desk study built from public data</b>. No one has visited the site. It is
+    <b>not</b> a survey, a geotechnical report, a soil evaluation, a title opinion, an appraisal, or
+    legal, engineering or investment advice, and it must not be relied upon as any of those.</p>
+    <p>Boundaries, contours, slopes and distances marked <span class="b b-gis">GIS-derived</span> are
+    <b>estimates</b> computed from public datasets and will differ from a field survey. County parcel
+    fabric is a tax-mapping product and routinely departs from recorded boundaries by several feet.
+    Items marked <span class="b b-gap">Unverified</span> were not established — treat them as open
+    questions, not as negative findings. Regulatory items (zoning, moratoriums, septic rules, CCWA
+    policy) change; all were researched on the date shown and must be re-confirmed with the issuing
+    authority before you act.</p>
+    <p>Before purchasing, engage a Georgia-licensed <b>land surveyor</b>, a <b>geotechnical engineer</b>,
+    the <b>Clayton County Board of Health</b> for the soil evaluation, a <b>real estate attorney</b> for
+    title and covenants, and obtain written determinations from <b>Clayton County Community
+    Development</b> and the <b>Clayton County Water Authority</b>.</p>
+  </div>
+  <div class="pfoot"><span>Visual deliverables, sources &amp; methodology</span><span>{{PAGENO}}</span></div>
+</section>
+
+<script>
+(function(){
+  var sheets=[].slice.call(document.querySelectorAll('.sheet[data-nav]'));
+  var sel=document.getElementById('jump');
+  sheets.forEach(function(s){
+    var o=document.createElement('option');
+    o.value=s.id; o.textContent=s.getAttribute('data-nav'); sel.appendChild(o);
+  });
+  sel.addEventListener('change',function(){
+    var el=document.getElementById(sel.value);
+    if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  document.getElementById('pr').addEventListener('click',function(){window.print();});
+  // evidence filter: dim rows/paragraphs that do not carry the chosen badge
+  var btns=[].slice.call(document.querySelectorAll('#nav button[data-f]'));
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var f=b.getAttribute('data-f');
+      var units=[].slice.call(document.querySelectorAll('.sheet tr, .sheet .box, .sheet .ck'));
+      units.forEach(function(u){
+        if(f==='all'){u.classList.remove('dim');return;}
+        u.classList.toggle('dim', !u.querySelector('.'+f));
+      });
+    });
+  });
+  // checklist persistence
+  var boxes=[].slice.call(document.querySelectorAll('.ck input[type=checkbox]'));
+  boxes.forEach(function(cb,i){
+    var k='dd23_ck_'+i;
+    try{ if(localStorage.getItem(k)==='1') cb.checked=true; }catch(e){}
+    cb.addEventListener('change',function(){
+      try{ localStorage.setItem(k, cb.checked?'1':'0'); }catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
